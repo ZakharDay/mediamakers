@@ -1,0 +1,25 @@
+<h1>Listing landings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Index</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @landings.each do |landing| %>
+      <tr>
+        <td><%= landing.index %></td>
+        <td><%= link_to 'Show', landing %></td>
+        <td><%= link_to 'Edit', edit_landing_path(landing) %></td>
+        <td><%= link_to 'Destroy', landing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Landing', new_landing_path %>
