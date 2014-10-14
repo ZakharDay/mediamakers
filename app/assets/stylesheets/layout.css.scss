@@ -1,0 +1,384 @@
+$body: 960px;
+$padding: 20px;
+$grey: #cccccc;
+
+* {
+  @include box-sizing(border-box);
+  background-size: cover;
+  background-position: center;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'PT Mono', 'Courier New', Courier, monospace;
+  font-size: 14px;
+}
+
+a {
+  color: inherit;
+}
+
+strong { font-weight: bold; }
+
+hr {
+  border-color: $grey;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+}
+
+.logo {
+  &.slon {
+    width: 53px;
+    height: 20px;
+    background-image: url(slon_logo.png);
+  }
+
+  &.rbk {
+    width: 66px;
+    height: 26px;
+    background-image: url(rbk_logo.png);
+  }
+}
+
+.share {
+  width: 188px;
+  height: 56px;
+  border: 3px solid white;
+  text-align: center;
+  line-height: 50px;
+  transition: all .3s ease-out;
+  color: white;
+
+  &:hover {
+    background: white;
+    color: black;
+    cursor: pointer;
+  }
+}
+
+.centerizer {
+  width: 646px;
+  margin: 0 auto;
+
+  aside {
+    width: 440px;
+    margin-left: 250px;
+    text-align: left !important;
+  }
+}
+
+html,
+body,
+.welcome,
+.promo,
+.registration,
+.address,
+.partners,
+.credits {
+  @include square;
+  min-width: 1000px;
+  min-height: 675px;
+}
+
+.welcome,
+.promo,
+.registration {
+  background-size: cover;
+}
+
+.welcome {
+  background-image: url(welcome_bg.jpg);
+  color: white;
+
+  .centerizer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+
+  .logo {
+    width: 381px;
+    margin-left: 194px;
+  }
+
+  .logo {
+    height: 170px;
+    background: url(welcome_logo.png);
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+
+  p {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .chevron {
+    width: 32px;
+    height: 21px;
+    background: url(chevron.png);
+  }
+}
+
+.promo {
+  display: flex;
+  background-image: url(promo_bg.jpg);
+
+  .promoGif {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include square(500px);
+    margin: auto;
+    background-image: url(promo.gif);
+
+    .playButtonCircle {
+      display: flex;
+      @include square(120px);
+      border: 10px solid white;
+      @include border-radius(60px);
+      transition: background .3s ease-out;
+
+      &:hover {
+        background-color: rgba(255,255,255,.6);
+        cursor: pointer;
+
+        .playButtonTriangle {
+          border-left: 20px solid black;
+        }
+      }
+
+      .playButtonTriangle {
+        width: 0;
+        height: 0;
+        margin: auto;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 20px solid white;
+        transition: border .3s ease-out;
+      }
+    }
+
+    h2 {
+      margin-top: 28px;
+      font-size: 21px;
+      color: white;
+      text-align: center;
+    }
+  }
+}
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(registration_bg.jpg);
+
+  h2 {
+    font-size: 21px;
+    line-height: 25px;
+    color: white;
+  }
+
+  .logo1 {
+    width: 37px;
+    height: 103px;
+    margin-top: 80px;
+    background-image: url(registration_logo_1.png);
+  }
+
+  .logo2 {
+    width: 71px;
+    height: 32px;
+    background-image: url(registration_logo_2.png);
+  }
+
+  .registerButton {
+    width: 268px;
+    height: 79px;
+    // font-size: 14px;
+    border: 3px solid black;
+    text-align: center;
+    line-height: 74px;
+    transition: background .3s ease-out;
+    transition: color .3s ease-out;
+
+    &:hover {
+      background: black;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+
+.address {
+
+  header {
+    width: 100%;
+    height: 60%;
+    background-image: url(map_mock.jpg);
+  }
+
+  footer {
+    display: flex;
+    height: 40%;
+  }
+
+  p {
+    width: 450px;
+    margin: auto;
+    // font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+
+  header {
+    width: $body;
+    height: 62px;
+    padding-top: 47px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    hr, h2 {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    hr {
+      width: 420px;
+    }
+
+    h2 {
+      margin: 0 2px;
+    }
+  }
+
+  ul.orgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60%;
+
+    li {
+      text-align: center;
+
+      $padding: 100px;
+      &:first-child { padding-top: $padding; }
+      &:last-child  { padding-bottom: $padding; }
+
+      .logo {
+        margin: 0 auto;
+      }
+
+      p {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  footer {
+    height: 40%;
+
+    hr { width: $body; }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: no-wrap;
+      justify-content: space-around;
+      width: 80%;
+      margin: 0 auto;
+      padding: 60px 0 120px;
+
+      li {
+        text-align: center;
+
+        .logo {
+          width: 81px;
+          height: 35px;
+          margin: 0 auto;
+          background-color: $grey;
+        }
+
+        p {
+          margin-top: 28px;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+}
+
+.credits {
+  position: relative;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  background-color: #333333;
+
+  & > .logo {
+    position: absolute;
+    width: 54px;
+    height: 71px;
+    margin: -30px calc(50% - 27px);
+    background-image: url(credits_logo_1.jpg);
+  }
+
+  .centerizer {
+    display: flex;
+    height: calc(100% - 120px);
+
+    aside {
+      margin: auto auto auto 228px;
+    }
+
+    h2 {
+      margin-top: 55px;
+      font-size: 18px;
+    }
+
+    p {
+      margin-top: 42px;
+      line-height: 17px;
+
+      span { color: #4d4d4d; }
+    }
+  }
+
+  footer {
+    position: relative;
+    width: $body;
+    height: 120px;
+    margin: 0 auto;
+    padding: 38px 0;
+    border-top: 1px solid black;
+
+    .logo {
+      position: absolute;
+      width: 98px;
+      height: 44px;
+      right: 0;
+      background-image: url(credits_logo_2.png);
+    }
+
+    p {
+      text-align: center;
+      line-height: 44px;
+      color: white;
+    }
+  }
+}

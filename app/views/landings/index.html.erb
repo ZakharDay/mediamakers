@@ -1,25 +1,139 @@
-<h1>Listing landings</h1>
+<section class="welcome">
+  <div class="centerizer">
 
-<table>
-  <thead>
-    <tr>
-      <th>Index</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <div class="logo"></div>
 
-  <tbody>
-    <% @landings.each do |landing| %>
-      <tr>
-        <td><%= landing.index %></td>
-        <td><%= link_to 'Show', landing %></td>
-        <td><%= link_to 'Edit', edit_landing_path(landing) %></td>
-        <td><%= link_to 'Destroy', landing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    <aside>
+      <h2>© Меняем медиаландшафт</h2>
 
-<br>
+      <p>
+        Первая конференция о людях, меняющих<br>
+        ландшафт медиа. Людях, создающих<br>
+        инновационные проекты и продукты.<br>
+        Людях, переворачивающих привычную<br>
+        среду с ног на голову. Здесь и сейчас
+      </p>
+    </aside>
 
-<%= link_to 'New Landing', new_landing_path %>
+    <div class="share">поделиться</div>
+    <div class="chevron"></div>
+
+  </div>
+</section>
+
+<section class="promo">
+  <div class="promoGif bubble">
+    <div class="playButtonCircle">
+      <div class="playButtonTriangle"></div>
+    </div>
+    <h2>Смотреть промо-ролик</h2>
+  </div>
+</section>
+
+<section class="schedule">
+
+</section>
+
+<section class="registration">
+  <div class="logo1"></div>
+  <h2>
+    Станьте гостем MediaMakers, зарегистрировавшись<br>
+    на официальной странице мероприятия на Exchang.es</h2>
+    <a class="registerButton" href="https://exchang.es/e/oghlianities-miedia-mieniaiutsia-prievrashchaias-v-iedinyi-dinamichnyi-potok-informatsii-priamo-u-nas-na-ghlazakh">зарегистрироваться</a>
+  <div class="logo2"></div>
+</section>
+
+<section class="address">
+  <header></header>
+  <footer>
+    <p>
+      Ждем вас <strong>29 октября</strong> в креативном<br>
+      пространстве <strong>DI Telegraph</strong> по адресу:<br>
+      Москва, <strong>ул. Тверская, д.7</strong><br>
+      Вход со стороны Газетного переулка<br>
+      9 подъезд, 5 этаж
+    </p>
+  </footer>
+</section>
+
+<section class="partners">
+  <header>
+    <hr noshade>
+    <h2>Партнеры</h2>
+    <hr noshade>
+  </header>
+
+  <ul class="orgs">
+    <li>
+      <div class="logo slon"></div>
+      <p>огрганизатор конференции</p>
+    </li>
+    <li>
+      <div class="logo rbk"></div>
+      <p>интеллектуальный партнер конференции</p>
+    </li>
+  </ul>
+
+  <footer>
+    <hr noshade>
+
+    <ul>
+      <li>
+        <div class="logo"></div>
+        <p>огрганизатор<br>конференции</p>
+      </li>
+      <li>
+        <div class="logo"></div>
+        <p>огрганизатор<br>конференции</p>
+      </li>
+      <li>
+        <div class="logo"></div>
+        <p>огрганизатор<br>конференции</p>
+      </li>
+      <li>
+        <div class="logo"></div>
+        <p>огрганизатор<br>конференции</p>
+      </li>
+      <li>
+        <div class="logo"></div>
+        <p>огрганизатор<br>конференции</p>
+      </li>
+    </ul>
+  </footer>
+</section>
+
+<section class="credits">
+  <div class="logo"></div>
+
+  <div class="centerizer">
+    <aside>
+      <div class="share">поделиться</div>
+
+      <h2>Над проектом работали</h2>
+
+      <p>
+        Воыапл Лалывл <span>Воыапл Лалывл</span><br>
+        Воыапл Лалывл <span>Воыапл Лалывл</span><br>
+        Воыапл Лалывл <span>Воыапл Лалывл</span><br>
+        Воыапл Лалывл <span>Воыапл Лалывл</span><br>
+        Воыапл Лалывл <span>Воыапл Лалывл</span><br>
+        Воыапл Лалывл <span>Воыапл Лалывл</span><br>
+        Воыапл Лалывл <span>Воыапл Лалывл</span><br>
+        Воыапл Лалывл <span>Воыапл Лалывл</span><br>
+        Воыапл Лалывл <span>Воыапл Лалывл</span><br>
+        Воыапл Лалывл <span>Воыапл Лалывл</span><br>
+        Воыапл Лалывл <span>Воыапл Лалывл</span><br>
+        Воыапл Лалывл <span>Воыапл Лалывл</span><br>
+        Воыапл Лалывл <span>Воыапл Лалывл</span><br>
+        Воыапл Лалывл <span>Воыапл Лалывл</span><br>
+        Воыапл Лалывл <span>Воыапл Лалывл</span><br>
+        Воыапл Лалывл <span>Воыапл Лалывл</span><br>
+      </p>
+    </aside>
+  </div>
+
+  <footer>
+    <div class="logo"></div>
+    <p>© Media Makers / 2014</p>
+  </footer>
+</section>
