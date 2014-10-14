@@ -329,8 +329,9 @@ body,
     }
 
     p {
-      margin-top: 42px;
       line-height: 17px;
+
+      &:first-of-type { margin-top: 42px; }
     }
 
     .grey { color: #4d4d4d; }
