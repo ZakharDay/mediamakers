@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  # resources :landings, only: :index
+  resources :landings, only: :index
   root 'landings#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
