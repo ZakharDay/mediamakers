@@ -4,7 +4,7 @@ upstream unicorn-<%= application %> {
 
 server {
   listen 80 default deferred;
-  server_name trueproduction.ru;
+  server_name mediamakers.ru;
   root <%= current_path %>/public;
 
   if (-f $document_root/system/maintenance.html) {
@@ -49,6 +49,6 @@ server {
 
 server {
   listen 80;
-  server_name www.thngs.co;
-  rewrite ^/(.*) http://thngs.co/$1 permanent;
+  server_name www.mediamakers.ru;
+  rewrite ^/(.*) http://mediamakers.ru/$1 permanent;
 }

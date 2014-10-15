@@ -6,7 +6,7 @@ set :default_environment, {
 }
 
 set :user, "deployer"
-set :port, 22
+set :port, 20999
 server "128.199.213.187", :web, :app, :db, :primary => true
 set :scm, :git
 set :repository,  "git@github.com:ZakharDay/mediamakers.git"
