@@ -20,7 +20,7 @@ namespace :unicorn do
     desc "#{command} unicorn"
     task command, roles: :app do
       if rails_env == 'production'
-        run "service unicorn_thngs #{command}"
+        run "service unicorn_#{application} #{command}"
       end
     end
     after "deploy:#{command}", "unicorn:#{command}"
