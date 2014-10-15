@@ -30,13 +30,13 @@ hr {
   &.slon {
     width: 53px;
     height: 20px;
-    background-image: url(slon_logo.png);
+    background-image: image-url(slon_logo.png);
   }
 
   &.rbk {
     width: 66px;
     height: 26px;
-    background-image: url(rbk_logo.png);
+    background-image: image-url(rbk_logo.png);
   }
 }
 
@@ -83,7 +83,7 @@ body,
 }
 
 .welcome {
-  background-image: url(welcome_bg.jpg);
+  background-image: image-url(welcome_bg.jpg);
   color: white;
 
   .centerizer {
@@ -98,7 +98,7 @@ body,
     width: 381px;
     height: 170px;
     margin-left: 194px;
-    background: url(welcome_logo.png);
+    background: image-url(welcome_logo.png);
   }
 
   h2 {
@@ -114,13 +114,13 @@ body,
   .chevron {
     width: 32px;
     height: 21px;
-    background: url(chevron.png);
+    background: image-url(chevron.png);
   }
 }
 
 .promo {
   @include display-flex();
-  background-image: url(promo_bg.jpg);
+  background-image: image-url(promo_bg.jpg);
 
   .promoGif {
     @include display-flex();
@@ -129,7 +129,7 @@ body,
     @include align-items(center);
     @include square(500px);
     margin: auto;
-    background-image: url(promo.gif);
+    background-image: image-url(promo.gif);
 
     .playButtonCircle {
       @include display-flex();
@@ -150,7 +150,7 @@ body,
       .playButtonTriangle {
         width: 24px;
         height: 32px;
-        background-image: url(play.png);
+        background-image: image-url(play.png);
       }
     }
 
@@ -168,7 +168,7 @@ body,
   @include flex-direction(column);
   @include justify-content(space-around);
   @include align-items(center);
-  background-image: url(registration_bg.jpg);
+  background-image: image-url(registration_bg.jpg);
 
   h2 {
     font-size: 21px;
@@ -181,13 +181,13 @@ body,
     width: 37px;
     height: 103px;
     margin-top: 80px;
-    background-image: url(registration_logo_1.png);
+    background-image: image-url(registration_logo_1.png);
   }
 
   .logo2 {
     width: 71px;
     height: 32px;
-    background-image: url(registration_logo_2.png);
+    background-image: image-url(registration_logo_2.png);
   }
 
   .registerButton {
@@ -214,7 +214,7 @@ body,
   header {
     width: 100%;
     height: 60%;
-    background-image: url(map_mock.jpg);
+    background-image: image-url(map_mock.jpg);
   }
 
   footer {
@@ -312,7 +312,7 @@ body,
     width: 54px;
     height: 71px;
     margin: -30px calc(50% - 27px);
-    background-image: url(credits_logo_1.jpg);
+    background-image: image-url(credits_logo_1.jpg);
   }
 
   .centerizer {
@@ -350,7 +350,7 @@ body,
       width: 98px;
       height: 44px;
       right: 0;
-      background-image: url(credits_logo_2.png);
+      background-image: image-url(credits_logo_2.png);
     }
 
     p {
@@ -397,7 +397,7 @@ body,
       width: 205px;
       height: 91px;
       margin: 20px 0 0 $marginLeft;
-      background: url(welcome_logo_m.png);
+      background: image-url(welcome_logo_m.png);
     }
 
     h2, p { margin: 15px 0 0 $marginLeft; }
@@ -429,13 +429,13 @@ body,
   }
 
   .registration {
-    background-image: url(registration_bg_m.jpg);
+    background-image: image-url(registration_bg_m.jpg);
 
     .logo1 {
       width: 25px;
       height: 69px;
       margin-top: 10px;
-      background-image: url(registration_logo_1_m.png);
+      background-image: image-url(registration_logo_1_m.png);
     }
   }
 
@@ -444,7 +444,7 @@ body,
     header {
       width: 100%;
       height: 60%;
-      background-image: url(map_mock.jpg);
+      background-image: image-url(map_mock.jpg);
     }
 
     footer {
