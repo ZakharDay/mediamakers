@@ -84,7 +84,9 @@ function initialize(contentString) {
 
   var mapOptions = {
     zoom: 17,
-    center: new google.maps.LatLng(55.7595764, 37.6119288),
+    // center: new google.maps.LatLng(55.7595764, 37.6119288),
+    // center: new google.maps.LatLng(55.7589764, 37.6112288),
+    center: new google.maps.LatLng(55.758478, 37.61053),
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     navigationControl: false,
     streetViewControl: false,

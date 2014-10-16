@@ -557,12 +557,12 @@ body,
   }
 }
 
-@media only screen and (min-device-width : 768px), only screen and (max-device-width : 1024px) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 // @media only screen and (min-device-width : 768px) {
   $body: calc(100% - 40px);
   $bodyMinHeight: 100%;
   $bodyMinWidth: 100%;
-  $aboutWidth: 486px;
+  // $aboutWidth: 486px;
 
   html,
   body,
@@ -578,9 +578,32 @@ body,
 
   .schedule {
 
-    .about { width: $aboutWidth; }
+    // .about { width: $aboutWidth; }
 
     section.session {
+      // header {
+      //   .left {
+      //     width: $timeWidth + $photoWidth;
+      //
+      //     span {
+      //       padding-left: $headlinePadding;
+      //       padding-right: $photoWidth - $photoImageWidth - 4px;
+      //       color: $scheduleGrey;
+      //     }
+      //   }
+      //
+      //   .right {
+      //     width: $aboutWidth;
+      //     font-weight: bold;
+      //     text-transform: uppercase;
+      //     color: $scheduleDarkGrey;
+      //
+      //     span {
+      //       padding-right: $headlinePadding;
+      //     }
+      //   }
+      // }
+
       ul { width: $body; }
     }
   }
@@ -593,6 +616,69 @@ body,
   .credits {
 
     footer { width: $body; }
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  $aboutWidth: 486px;
+
+  .schedule {
+
+    header.top {
+      h2 {
+        padding-left: 20px;
+        text-align: left;
+      }
+    }
+
+    .about { width: $aboutWidth; }
+
+    section.session {
+      header {
+        .left { width: $timeWidth + $photoWidth - $headlinePadding; }
+        .right { width: $aboutWidth - $headlinePadding; }
+
+        &#intro {
+
+          .left { width: $timeWidth + $photoWidth - $headlinePadding; }
+
+          .right {
+            width: $aboutWidth + $headlinePadding;
+
+            span {
+              padding-left: $headlinePadding;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  $aboutWidth: 686px;
+
+  .schedule {
+
+    .about { width: $aboutWidth; }
+
+    section.session {
+      header {
+        .left { width: $timeWidth + $photoWidth - $headlinePadding * 2; }
+        .right { width: $aboutWidth - $headlinePadding; }
+
+        &#intro {
+
+          .left { width: $timeWidth + $photoWidth - $headlinePadding * 2; }
+
+          .right {
+            width: $aboutWidth + $headlinePadding;
+
+            span { padding-left: $headlinePadding; }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -857,9 +943,14 @@ body,
 
     .centerizer {
       aside { margin: auto; }
-      h2, p { margin-left: $marginLeft; }
-      h2 { margin-top: 55px; }
       .grey { display: block; }
+      p { padding: 0 $marginLeft; }
+
+      h2 {
+        padding-left: $marginLeft;
+        margin-top: 55px;
+      }
+
     }
 
     footer {
