@@ -1,4 +1,8 @@
 <section class="welcome">
+  <section class="videoBackground">
+    <%= video_tag(['videos/welcome.mp4', 'videos/welcome.webm', 'videos/welcome.ogv'], controls: false, autoplay: true, loop: true, poster: 'welcome_bg.jpg') %>
+  </section>
+
   <div class="centerizer">
 
     <div class="logo"></div>
@@ -294,12 +298,20 @@
 </section>
 
 <section class="registration">
-  <div class="logo1"></div>
-  <h2>
-    Станьте гостем MediaMakers, зарегистрировавшись<br>
-    на официальной странице мероприятия на Exchang.es</h2>
-    <a class="registerButton" target="_blank" href="https://exchang.es/e/oghlianities-miedia-mieniaiutsia-prievrashchaias-v-iedinyi-dinamichnyi-potok-informatsii-priamo-u-nas-na-ghlazakh">зарегистрироваться</a>
-  <div class="logo2"></div>
+  <section class="videoBackground">
+    <%= video_tag(['videos/registration.mp4', 'videos/registration.webm', 'videos/registration.ogv'], controls: false, autoplay: true, loop: true, poster: 'registration_bg.jpg') %>
+  </section>
+
+  <div class="centerizer">
+
+    <div class="logo1"></div>
+    <h2>
+      Станьте гостем MediaMakers, зарегистрировавшись<br>
+      на официальной странице мероприятия на Exchang.es</h2>
+      <a class="registerButton" target="_blank" href="https://exchang.es/e/oghlianities-miedia-mieniaiutsia-prievrashchaias-v-iedinyi-dinamichnyi-potok-informatsii-priamo-u-nas-na-ghlazakh">зарегистрироваться</a>
+    <div class="logo2"></div>
+
+  </div>
 </section>
 
 <section class="address">

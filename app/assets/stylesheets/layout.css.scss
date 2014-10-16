@@ -29,6 +29,19 @@ hr {
   border-style: solid;
 }
 
+.videoBackground {
+  position: absolute;
+  @include square;
+  overflow: hidden;
+
+  video {
+    position: absolute;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+}
+
 .logo {
   &.slon {
     width: 53px;
@@ -91,11 +104,13 @@ body,
   color: white;
 
   .centerizer {
+    position: relative;
     @include display-flex();
     @include flex-direction(column);
     @include justify-content(space-around);
     @include align-items(center);
     height: 100%;
+    z-index: 1;
   }
 
   .logo {
@@ -307,11 +322,17 @@ body,
 }
 
 .registration {
-  @include display-flex();
-  @include flex-direction(column);
-  @include justify-content(space-around);
-  @include align-items(center);
   background-image: image-url('registration_bg.jpg');
+
+  .centerizer {
+    position: relative;
+    z-index: 1;
+    @include square;
+    @include display-flex();
+    @include flex-direction(column);
+    @include justify-content(space-around);
+    @include align-items(center);
+  }
 
   h2 {
     font-size: 21px;
