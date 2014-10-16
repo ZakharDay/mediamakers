@@ -2,9 +2,17 @@ $body: 960px;
 // $body: calc(100% - 40px);
 $padding: 20px;
 $grey: #cccccc;
-$scheduleGrey: #4d4d4d;
+// $scheduleGrey: #4d4d4d;
+// $scheduleDarkGrey: #1a1a1a;
+// $scheduleLightGrey: #808080;
+$scheduleGrey: #1a1a1a;
 $scheduleDarkGrey: #1a1a1a;
 $scheduleLightGrey: #808080;
+$timeWidth: 150px;
+$photoWidth: 124px;
+$photoImageWidth: 97px;
+$aboutWidth: 686px;
+$headlinePadding: 30px;
 
 * {
   @include box-sizing(border-box);
@@ -44,6 +52,8 @@ hr {
 }
 
 .logo {
+  &.slon, &.rbk { display: block; }
+
   &.slon {
     width: 53px;
     height: 20px;
@@ -96,8 +106,6 @@ body,
 .partners,
 .credits {
   @include square;
-  // min-width: 1000px;
-  // min-height: 675px;
 }
 
 .welcome {
@@ -184,11 +192,7 @@ body,
 }
 
 .schedule {
-  $timeWidth: 150px;
-  $photoWidth: 124px;
-  $photoImageWidth: 97px;
-  $aboutWidth: 686px;
-  $headlinePadding: 30px;
+  padding-bottom: 160px;
 
   header.top {
     position: relative;
@@ -205,12 +209,26 @@ body,
     aside {
       position: absolute;
       top: 47px;
-      right: 40px;
+      right: 68px;
     }
 
     .logo {
       display: inline-block;
+
+      &.slon { margin-right: 20px; }
     }
+  }
+
+  section.blackSeparator {
+    @include display-flex();
+    height: 170px;
+    font-size: 24px;
+    line-height: 29px;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+    p { margin: auto; }
   }
 
   section.session {
@@ -252,6 +270,8 @@ body,
       }
 
       &#intro {
+        margin-top: 70px;
+
         .left {
           width: $timeWidth + $photoWidth - $headlinePadding;
         }
@@ -295,6 +315,8 @@ body,
   .photo, .line { width: $photoWidth; }
 
   .photo {
+    width: $photoWidth;
+
     img { @include square(97px) }
   }
 
@@ -316,7 +338,8 @@ body,
       color: $scheduleGrey;
 
       &.descriptor {
-        color: $scheduleLightGrey;
+        margin-top: 10px;
+        // color: $scheduleLightGrey;
       }
     }
   }
@@ -412,14 +435,16 @@ body,
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    border-bottom: 1px solid $grey;
 
-    hr, h2 {
-      display: inline-block;
-      vertical-align: middle;
+    h2 {
+      line-height: 30px;
+
+      span {
+        padding: 0 $headlinePadding;
+        background-color: white;
+      }
     }
-
-    hr { width: 420px; }
-    h2 { margin: 0 2px; }
   }
 
   ul.orgs {
@@ -559,8 +584,46 @@ body,
       ul { width: $body; }
     }
   }
+
+  .partners {
+
+    header { width: $body; }
+  }
+
+  .credits {
+
+    footer { width: $body; }
+  }
 }
 
+@media only screen and (min-width : 1224px) {
+  $body: 960px;
+  $bodyMinWidth: 1000px;
+  $bodyMinHeight: 675px;
+  $aboutWidth: 686px;
+
+  html,
+  body,
+  .welcome,
+  .promo,
+  .registration,
+  .address,
+  .partners,
+  .credits {
+    min-width: $bodyMinWidth;
+    min-height: $bodyMinHeight;
+  }
+
+  .schedule {
+    .about { width: $aboutWidth; }
+
+    section.session {
+      ul { width: $body; }
+    }
+  }
+}
+
+// @media only screen and (max-width: 480px), only screen and (max-device-width: 480px), only screen and (min-width: 320px), only screen and (min-device-width: 320px) {
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
   $marginLeft: 38px;
   $bodyMinWidth: 100%;
@@ -568,7 +631,7 @@ body,
   $timeWidth: 150px;
   $photoWidth: 124px;
   $photoImageWidth: 97px;
-  $aboutWidth: 686px;
+  $aboutWidth: 100%;
   $headlinePadding: 30px;
 
   .centerizer {
@@ -814,31 +877,4 @@ body,
     }
   }
 
-}
-
-@media only screen and (min-width : 1224px) {
-  $body: 960px;
-  $bodyMinWidth: 1000px;
-  $bodyMinHeight: 675px;
-  $aboutWidth: 786px;
-
-  html,
-  body,
-  .welcome,
-  .promo,
-  .registration,
-  .address,
-  .partners,
-  .credits {
-    min-width: $bodyMinWidth;
-    min-height: $bodyMinHeight;
-  }
-
-  .schedule {
-    .about { width: $aboutWidth; }
-
-    section.session {
-      ul { width: $body; }
-    }
-  }
 }
