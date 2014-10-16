@@ -87,7 +87,8 @@ hr {
 }
 
 .centerizer {
-  width: 646px;
+  position: relative;
+  z-index: 1;
   margin: 0 auto;
 
   aside {
@@ -99,6 +100,8 @@ hr {
 
 html,
 body,
+.centerizer,
+.topScreenWrapper,
 .welcome,
 .promo,
 .registration,
@@ -107,6 +110,8 @@ body,
 .credits {
   @include square;
 }
+
+.topScreenWrapper { overflow: scroll; }
 
 .welcome {
   background-image: image-url('welcome_bg.jpg');
@@ -118,7 +123,7 @@ body,
     @include flex-direction(column);
     @include justify-content(space-around);
     @include align-items(center);
-    height: 100%;
+    // height: 100%;
     z-index: 1;
   }
 
@@ -147,10 +152,19 @@ body,
 }
 
 .promo {
-  @include display-flex();
-  background-image: image-url('promo_bg.jpg');
+  // @include display-flex();
+  // background-image: image-url('promo_bg.jpg');
+
+  .centerizer {
+    @include display-flex();
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include align-items(center);
+  }
 
   .promoGif {
+    // position: relative;
+    // z-index: 1;
     @include display-flex();
     @include flex-direction(column);
     @include justify-content(center);
@@ -566,6 +580,8 @@ body,
 
   html,
   body,
+  .centerizer,
+  .topScreenWrapper,
   .welcome,
   .promo,
   .registration,
@@ -690,6 +706,8 @@ body,
 
   html,
   body,
+  .centerizer,
+  .topScreenWrapper,
   .welcome,
   .promo,
   .registration,
@@ -721,7 +739,7 @@ body,
   $headlinePadding: 30px;
 
   .centerizer {
-    width: 100%;
+    // width: 100%;
 
     aside {
       width: 100%;
@@ -732,6 +750,8 @@ body,
 
   html,
   body,
+  .centerizer,
+  .topScreenWrapper,
   .welcome,
   .promo,
   .registration,
@@ -967,5 +987,4 @@ body,
       p { text-align: left; }
     }
   }
-
 }
