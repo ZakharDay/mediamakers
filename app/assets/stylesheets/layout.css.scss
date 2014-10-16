@@ -284,7 +284,7 @@ body,
       }
 
       &#intro {
-        margin-top: 70px;
+        // margin-top: 70px;
 
         .left {
           width: $timeWidth + $photoWidth - $headlinePadding;
@@ -297,6 +297,10 @@ body,
             padding-left: $headlinePadding;
           }
         }
+      }
+
+      &#firstSession {
+        margin-top: 70px;
       }
     }
 
