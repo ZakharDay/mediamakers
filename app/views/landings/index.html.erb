@@ -6,16 +6,11 @@
     <aside>
       <h2>© Меняем медиаландшафт</h2>
 
-      <p>
-        Первая конференция о людях, меняющих
-        ландшафт медиа. Людях, создающих
-        инновационные проекты и продукты.
-        Людях, переворачивающих привычную
-        среду с ног на голову. Здесь и сейчас
-      </p>
+      <p><%= @about %></p>
     </aside>
 
-    <div class="share">поделиться</div>
+    <%= render 'share' %>
+
     <div class="chevron"></div>
 
   </div>
@@ -31,7 +26,37 @@
 </section>
 
 <section class="schedule">
+  <header class="top">
+    <h2>Расписание</h2>
+    <aside>
+      <div class="logo slon"></div>
+      <div class="logo rbk"></div>
+    </aside>
+  </header>
 
+  <section class="session">
+    <ul>
+      <li>
+        <div class="time">9<span>30</span> – 10<span>00</span></div>
+        <div class="photo"></div>
+        <div class="about"><h4>Сбор гостей</h4></div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="session">
+    <header>
+
+    </header>
+
+    <ul>
+      <li>
+        <div class="time">9<span>30</span> – 10<span>00</span></div>
+        <div class="photo"></div>
+        <div class="about"><h4>Сбор гостей</h4></div>
+      </li>
+    </ul>
+  </section>
 </section>
 
 <section class="registration">
@@ -39,7 +64,7 @@
   <h2>
     Станьте гостем MediaMakers, зарегистрировавшись<br>
     на официальной странице мероприятия на Exchang.es</h2>
-    <a class="registerButton" href="https://exchang.es/e/oghlianities-miedia-mieniaiutsia-prievrashchaias-v-iedinyi-dinamichnyi-potok-informatsii-priamo-u-nas-na-ghlazakh">зарегистрироваться</a>
+    <a class="registerButton" target="_blank" href="https://exchang.es/e/oghlianities-miedia-mieniaiutsia-prievrashchaias-v-iedinyi-dinamichnyi-potok-informatsii-priamo-u-nas-na-ghlazakh">зарегистрироваться</a>
   <div class="logo2"></div>
 </section>
 
@@ -66,7 +91,7 @@
   <ul class="orgs">
     <li>
       <div class="logo slon"></div>
-      <p>огрганизатор конференции</p>
+      <p>организатор конференции</p>
     </li>
     <li>
       <div class="logo rbk"></div>
@@ -80,23 +105,23 @@
     <ul>
       <li>
         <div class="logo"></div>
-        <p>огрганизатор<br>конференции</p>
+        <p>организатор<br>конференции</p>
       </li>
       <li>
         <div class="logo"></div>
-        <p>огрганизатор<br>конференции</p>
+        <p>организатор<br>конференции</p>
       </li>
       <li>
         <div class="logo"></div>
-        <p>огрганизатор<br>конференции</p>
+        <p>организатор<br>конференции</p>
       </li>
       <li>
         <div class="logo"></div>
-        <p>огрганизатор<br>конференции</p>
+        <p>организатор<br>конференции</p>
       </li>
       <li>
         <div class="logo"></div>
-        <p>огрганизатор<br>конференции</p>
+        <p>организатор<br>конференции</p>
       </li>
     </ul>
   </footer> -->
@@ -107,7 +132,7 @@
 
   <div class="centerizer">
     <aside>
-      <div class="share">поделиться</div>
+      <%= render 'share' %>
 
       <h2>Над проектом работали</h2>
 
