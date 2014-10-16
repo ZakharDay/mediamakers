@@ -182,6 +182,7 @@ body,
 
     h2 {
       text-align: center;
+      font-weight: bold;
       color: $scheduleGrey;
     }
 
@@ -567,6 +568,116 @@ body,
     .promoGif {
       @include square(280px);
       h2 { font-size: 16px; }
+    }
+  }
+
+  .schedule {
+    $timeWidth: 150px;
+    $photoWidth: 124px;
+    $photoImageWidth: 97px;
+    $aboutWidth: 686px;
+    $headlinePadding: 30px;
+
+    header.top {
+      padding: 80px 40px 0;
+
+      h2 {
+        text-align: left;
+        font-size: 20px;
+      }
+
+      aside {
+        position: absolute;
+        width: 66px;
+        top: 40px;
+        right: 40px;
+      }
+
+      .logo { display: block; }
+      .rbk { margin-top: 10px; }
+    }
+
+    section.session {
+      header {
+        display: block;
+        margin-top: 200px;
+        border-bottom: 1px solid $grey;
+
+        .left {
+          width: 100%;
+          text-align: center;
+        }
+
+        .right {
+          width: 100%;
+          text-align: left;
+          padding: 0 40px;
+          margin: 25px 0 30px;
+        }
+
+        &#intro {
+          .left { width: 100%; }
+
+          .right {
+            width: 100%;
+            margin-top: 45px;
+
+            span { padding-left: 0; }
+          }
+        }
+      }
+
+      ul {
+        width: 100%;
+        margin: 0;
+
+        li {
+          display: block;
+          padding: 0 40px 40px;
+          border-bottom: 1px solid $grey;
+        }
+      }
+
+      &:last-child {
+        ul li { border: none; }
+      }
+    }
+
+    .time {
+      width: 100%;
+      font-size: 18px;
+      color: $scheduleGrey;
+      margin-bottom: 15px;
+
+      span {
+        font-size: 10px;
+        text-decoration: underline;
+        vertical-align: top;
+        line-height: 12px;
+      }
+    }
+
+    .photo, .line { width: 100%; }
+    .line { display: none; }
+
+    .about {
+      width: 100%;
+
+      h4 {
+        margin-top: 20px;
+        font-size: 18px;
+        color: $scheduleGrey;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 21px;
+        color: $scheduleGrey;
+
+        &.descriptor {
+          color: $scheduleLightGrey;
+        }
+      }
     }
   }
 
