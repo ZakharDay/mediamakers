@@ -2,10 +2,3 @@
   width: $size;
   height: $size;
 }
-
-@mixin autosize($size: 100%) {
-  min-width: $size;
-  min-height: $size;
-  width: auto;
-  height: auto;
-}

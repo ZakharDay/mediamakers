@@ -1,4 +1,5 @@
-$body: 960px;
+// $body: 960px;
+$body: calc(100% - 40px);
 $padding: 20px;
 $grey: #cccccc;
 $scheduleGrey: #4d4d4d;
@@ -214,8 +215,8 @@ body,
 
   section.session {
     header {
-      display: flex;
-      justify-content: center;
+      @include display-flex();
+      @include justify-content(center);
       font-size: 24px;
       margin-top: 200px;
       border-top: 1px solid $grey;
@@ -270,7 +271,7 @@ body,
       margin: 0 auto;
 
       li {
-        display: flex;
+        @include display-flex();
         margin: 50px 0;
 
         a { text-decoration: underline; }
@@ -521,6 +522,164 @@ body,
       text-align: center;
       line-height: 44px;
       color: white;
+    }
+  }
+}
+
+// @media only screen and (max-width : 768px) {
+// @media only screen and (max-width : 992px) {
+@media only screen and (min-device-width : 768px), only screen and (max-device-width : 1024px) {
+  html,
+  body,
+  .welcome,
+  .promo,
+  .registration,
+  .address,
+  .partners,
+  .credits {
+    @include square;
+    min-width: 100%;
+    min-height: 100%;
+  }
+//
+  .schedule {
+    // $body: 100%;
+//     $timeWidth: 150px;
+//     $photoWidth: 124px;
+//     $photoImageWidth: 97px;
+    $aboutWidth: 486px;
+//     $headlinePadding: 30px;
+//
+//     header.top {
+//       position: relative;
+//       padding-top: 53px;
+//       font-size: 24px;
+//       font-weight: bold;
+//
+//       h2 {
+//         text-align: center;
+//         font-weight: bold;
+//         color: $scheduleGrey;
+//       }
+//
+//       aside {
+//         position: absolute;
+//         top: 47px;
+//         right: 40px;
+//       }
+//
+//       .logo {
+//         display: inline-block;
+//       }
+//     }
+//
+    // section.session {
+//       header {
+//         display: flex;
+//         justify-content: center;
+//         font-size: 24px;
+//         margin-top: 200px;
+//         border-top: 1px solid $grey;
+//
+//         .left, .right {
+//           margin-top: -12px;
+//
+//           span {
+//             background-color: white;
+//           }
+//         }
+//
+//         .left {
+//           width: $timeWidth + $photoWidth;
+//           text-align: right;
+//
+//           span {
+//             padding-left: $headlinePadding;
+//             padding-right: $photoWidth - $photoImageWidth - 4px;
+//             color: $scheduleGrey;
+//           }
+//         }
+//
+//         .right {
+//           width: $aboutWidth;
+//           font-weight: bold;
+//           text-transform: uppercase;
+//           color: $scheduleDarkGrey;
+//
+//           span {
+//             padding-right: $headlinePadding;
+//           }
+//         }
+//
+//         &#intro {
+//           .left {
+//             width: $timeWidth + $photoWidth - $headlinePadding;
+//           }
+//
+//           .right {
+//             width: $aboutWidth + $headlinePadding;
+//
+//             span {
+//               padding-left: $headlinePadding;
+//             }
+//           }
+//         }
+//       }
+//
+      // ul {
+//         width: $body;
+//         // width: 100%;
+//         margin: 0 auto;
+//
+//         li {
+//           display: flex;
+//           margin: 50px 0;
+//
+//           a { text-decoration: underline; }
+//         }
+//       }
+    // }
+//
+//     .time {
+//       width: $timeWidth;
+//       font-size: 18px;
+//       color: $scheduleGrey;
+//
+//       span {
+//         font-size: 10px;
+//         text-decoration: underline;
+//         vertical-align: top;
+//         line-height: 12px;
+//       }
+//     }
+//
+//     .photo, .line { width: $photoWidth; }
+//
+//     .photo {
+//       img { @include square(97px) }
+//     }
+//
+//     .line {
+//       padding-right: $photoWidth - $photoImageWidth;
+//     }
+//
+    .about {
+      width: $aboutWidth;
+
+      h4 {
+        font-size: 18px;
+        color: $scheduleGrey;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 21px;
+        color: $scheduleGrey;
+
+        &.descriptor {
+          color: $scheduleLightGrey;
+        }
+      }
     }
   }
 }
