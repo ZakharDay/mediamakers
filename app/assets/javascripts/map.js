@@ -139,12 +139,12 @@ function initialize(contentString) {
 	var mapElement = $('.map');
   var mapLat = mapElement.data('latitude');
   var mapLon = mapElement.data('longitude');
-  var center = new google.maps.LatLng(mapLat, mapLon);
-  var tribecaLocation = new google.maps.LatLng(55.752663, 37.566621);
+  // var center = new google.maps.LatLng(mapLat, mapLon);
+  var tribecaLocation = new google.maps.LatLng(55.758478, 37.61053);
 
   var mapOptions = {
-    zoom: 15,
-    center: center,
+    zoom: 17,
+    center: new google.maps.LatLng(55.7595764, 37.6119288),
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     navigationControl: false,
     streetViewControl: false,
@@ -155,7 +155,8 @@ function initialize(contentString) {
     mapTypeControl: false,
     scaleControl: false,
     streetViewControl: false,
-    overviewMapControl: false
+    overviewMapControl: false,
+    scrollwheel: false
   }
 
   map = new google.maps.Map(mapCanvas, mapOptions);
@@ -163,40 +164,40 @@ function initialize(contentString) {
   map.mapTypes.set('map_style', styledMap);
   map.setMapTypeId('map_style');
 
-  var image2 = new google.maps.MarkerImage(
-    'http://tribecamoscow.ru/pointer-new.png',
-    new google.maps.Size(44,57),
-    new google.maps.Point(0,0),
-    new google.maps.Point(22,57)
-  );
+  // var image2 = new google.maps.MarkerImage(
+  //   'http://localhost:3012/assets/map_pointer.png',
+  //   new google.maps.Size(44,57),
+  //   new google.maps.Point(0,0),
+  //   new google.maps.Point(22,57)
+  // );
 
   var image = new google.maps.MarkerImage(
-    'http://tribecamoscow.ru/trans.gif',
-    new google.maps.Size(1,1),
+    'http://localhost:3012/map_pointer.png',
+    new google.maps.Size(20,31),
     new google.maps.Point(0,0),
-    new google.maps.Point(1,-1)
+    new google.maps.Point(1,36)
   );
 
   marker = new google.maps.Marker({
     position: tribecaLocation,
     map: map,
     clickable: true,
-    title: 'Tribeca',
+    title: 'DI Telegraph',
     icon: image
   });
 
-  infowindow = new google.maps.InfoWindow({
-    content: contentString
-  });
+  // infowindow = new google.maps.InfoWindow({
+  //   content: contentString
+  // });
 
   google.maps.event.addListener(marker, 'click', function() {
     marker.setIcon(image);
     infowindow.open(map, marker);
   });
 
-  google.maps.event.addListener(infowindow,'closeclick',function() {
-    marker.setIcon(image2);
-  });
+  // google.maps.event.addListener(infowindow,'closeclick',function() {
+  //   marker.setIcon(image2);
+  // });
 
 	// if ($('#contacts').length) {
 	// 	infowindow.open(map, marker);
@@ -219,15 +220,16 @@ function initialize(contentString) {
 $(document).on('ready page:load', function(){
 
   if ($('.map').length) {
-    var width = $(window).width();
+    // var width = $(window).width();
 
     // if (width < 2000){
-      var contentString = '<div class="popup_map"><strong><br /></strong></div>';
+      // var contentString = '<div class="popup_map"><strong><br /></strong></div>';
     // } else {
       // var contentString = '<img style="margin: 20px; margin-top: 40px;" src="images/map_popup_logo_big.png" alt="" />'
     // }
 
-    initialize(contentString);
+    // initialize(contentString);
+    initialize();
 
     // function showPosition(pos){
     //   var directionsDisplay = new google.maps.DirectionsRenderer();
