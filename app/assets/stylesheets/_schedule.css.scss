@@ -76,7 +76,8 @@
         }
       }
 
-      &#intro {
+      &#intro,
+      &#special {
         // margin-top: 70px;
 
         .left {
@@ -101,7 +102,7 @@
       width: 100%;
 
       li {
-        &:first-child { padding: 50px 0 25px; }
+        &:first-child { padding: 25px 0 0; }
 
         .wrapper {
           @include display-flex();
