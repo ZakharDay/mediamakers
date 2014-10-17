@@ -135,9 +135,12 @@
           // padding: 0 40px 40px;
           border-bottom: 1px solid $grey;
 
+          &:first-child { padding: 0; }
+
           .wrapper {
+            display: block;
             width: 100%;
-            // padding: 0 40px 40px;
+            padding: 40px;
           }
         }
       }
