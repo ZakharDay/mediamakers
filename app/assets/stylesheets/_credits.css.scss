@@ -1,0 +1,56 @@
+.credits {
+  position: relative;
+  background-color: #333333;
+
+  & > .logo {
+    position: absolute;
+    width: 54px;
+    height: 71px;
+    margin: -30px calc(50% - 27px);
+    background-image: image-url('credits_logo_1.jpg');
+  }
+
+  .centerizer {
+    @include display-flex();
+    height: calc(100% - 120px);
+
+    // aside { margin: auto auto auto 228px; }
+    aside { margin: auto auto auto 624px; }
+
+    h2 {
+      margin-top: 55px;
+      font-size: 18px;
+    }
+
+    p {
+      line-height: 17px;
+
+      &:first-of-type { margin-top: 42px; }
+    }
+
+    .grey { color: #4d4d4d; }
+  }
+
+  footer {
+    position: relative;
+    width: $body;
+    height: 120px;
+    margin: 0 auto;
+    padding: 38px 0;
+    border-top: 1px solid black;
+
+    .logo {
+      position: absolute;
+      width: 98px;
+      height: 44px;
+      right: 0;
+      background-image: image-url('credits_logo_2.png');
+    }
+
+    p {
+      text-align: center;
+      line-height: 44px;
+      color: white;
+    }
+  }
+}

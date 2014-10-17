@@ -1,0 +1,37 @@
+.welcome {
+  background-image: image-url('welcome_bg.jpg');
+  color: white;
+
+  .centerizer {
+    position: relative;
+    @include display-flex();
+    @include flex-direction(column);
+    @include justify-content(space-around);
+    @include align-items(center);
+    // height: 100%;
+    z-index: 1;
+  }
+
+  .logo {
+    width: 381px;
+    height: 170px;
+    margin-left: 194px;
+    background: image-url('welcome_logo.png');
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+
+  p {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .chevron {
+    width: 32px;
+    height: 21px;
+    background: image-url('chevron.png');
+  }
+}

@@ -1,0 +1,25 @@
+.address {
+
+  header.map {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    background-image: image-url('map_mock.jpg');
+
+    #map {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  footer {
+    @include display-flex();
+    height: 40%;
+  }
+
+  p {
+    width: 450px;
+    margin: auto;
+    line-height: 17px;
+  }
+}

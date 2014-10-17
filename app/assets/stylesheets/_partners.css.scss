@@ -1,0 +1,75 @@
+.partners {
+  @include display-flex();
+  @include flex-direction(column);
+  @include align-content(stretch);
+
+  header {
+    width: $body;
+    height: 62px;
+    padding-top: 47px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-bottom: 1px solid $grey;
+
+    h2 {
+      line-height: 30px;
+
+      span {
+        padding: 0 $headlinePadding;
+        background-color: white;
+      }
+    }
+  }
+
+  ul.orgs {
+    @include display-flex();
+    @include flex-direction(column);
+    @include justify-content(space-around);
+    // height: 60%;
+    height: 80%;
+
+    li {
+      text-align: center;
+
+      $padding: 100px;
+      &:first-child { padding-top: $padding; }
+      &:last-child  { padding-bottom: $padding; }
+
+      .logo { margin: 0 auto; }
+      p { margin-top: 20px; }
+    }
+  }
+
+  // footer {
+  //   height: 40%;
+  //
+  //   hr { width: $body; }
+  //
+  //   ul {
+  //     @include display-flex();
+  //     @include flex-direction(row);
+  //     @include flex-wrap(no-wrap);
+  //     @include justify-content(space-around);
+  //     width: 80%;
+  //     margin: 0 auto;
+  //     padding: 60px 0 120px;
+  //
+  //     li {
+  //       text-align: center;
+  //
+  //       .logo {
+  //         width: 81px;
+  //         height: 35px;
+  //         margin: 0 auto;
+  //         background-color: $grey;
+  //       }
+  //
+  //       p {
+  //         margin-top: 28px;
+  //         line-height: 17px;
+  //       }
+  //     }
+  //   }
+  // }
+}

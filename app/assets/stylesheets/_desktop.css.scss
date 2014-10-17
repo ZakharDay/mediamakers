@@ -1,0 +1,32 @@
+@media only screen and (min-width : 1224px) {
+  $body: 960px;
+  $bodyMinWidth: 1000px;
+  $bodyMinHeight: 675px;
+  $aboutWidth: 686px;
+
+  html,
+  body,
+  .centerizer,
+  .topScreenWrapper,
+  .welcome,
+  .promo,
+  .registration,
+  .address,
+  .partners,
+  .credits {
+    min-width: $bodyMinWidth;
+    min-height: $bodyMinHeight;
+  }
+
+  .schedule {
+    .about { width: $aboutWidth; }
+
+    section.session {
+      ul {
+        li {
+          .wrapper { width: $body; }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,267 @@
+// @media only screen and (max-width: 480px), only screen and (max-device-width: 480px), only screen and (min-width: 320px), only screen and (min-device-width: 320px) {
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+  $marginLeft: 38px;
+  $bodyMinWidth: 100%;
+  $bodyMinHeight: 100%;
+  $timeWidth: 150px;
+  $photoWidth: 124px;
+  $photoImageWidth: 97px;
+  $aboutWidth: 100%;
+  $headlinePadding: 30px;
+
+  .centerizer {
+    // width: 100%;
+
+    aside {
+      width: 100%;
+      margin-left: 0;
+      text-align: left !important;
+    }
+  }
+
+  html,
+  body,
+  .centerizer,
+  .topScreenWrapper,
+  .welcome,
+  .promo,
+  .registration,
+  .address,
+  .partners,
+  .credits {
+    min-width: $bodyMinWidth;
+    min-height: $bodyMinHeight;
+  }
+
+  .welcome {
+
+    .centerizer {
+      @include align-items(flex-start);
+    }
+
+    .logo {
+      width: 205px;
+      height: 91px;
+      margin: 20px 0 0 $marginLeft;
+      background: image-url('welcome_logo_m.png');
+    }
+
+    h2, p { margin: 15px 0 0 $marginLeft; }
+
+    h2 {
+      margin-top: 0;
+      font-size: 12px;
+    }
+
+    p {
+      margin: 15px 0 0 38px;
+      font-size: 10px;
+      line-height: 20px;
+    }
+
+    .share,
+    .chevron {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .promo {
+
+    .promoGif {
+      @include square(280px);
+      h2 { font-size: 16px; }
+    }
+  }
+
+  .schedule {
+
+    header.top {
+      padding: 80px 40px 0;
+
+      h2 {
+        text-align: left;
+        font-size: 20px;
+      }
+
+      aside {
+        position: absolute;
+        width: 66px;
+        top: 40px;
+        right: 40px;
+      }
+
+      .logo { display: block; }
+      .rbk { margin-top: 10px; }
+    }
+
+    section.session {
+      header {
+        display: block;
+        margin-top: 200px;
+        border-bottom: 1px solid $grey;
+
+        .left {
+          width: 100%;
+          text-align: center;
+        }
+
+        .right {
+          width: 100%;
+          text-align: left;
+          padding: 0 40px;
+          margin: 25px 0 30px;
+        }
+
+        &#intro {
+          .left { width: 100%; }
+
+          .right {
+            width: 100%;
+            margin-top: 45px;
+
+            span { padding-left: 0; }
+          }
+        }
+      }
+
+      ul {
+        width: 100%;
+        margin: 0;
+
+        li {
+          width: 100%;
+          display: block;
+          // padding: 0 40px 40px;
+          border-bottom: 1px solid $grey;
+
+          .wrapper {
+            width: 100%;
+            // padding: 0 40px 40px;
+          }
+        }
+      }
+
+      &:last-child {
+        ul li { border: none; }
+      }
+    }
+
+    .time {
+      width: 100%;
+      font-size: 18px;
+      color: $scheduleGrey;
+      margin-bottom: 15px;
+
+      span {
+        font-size: 10px;
+        text-decoration: underline;
+        vertical-align: top;
+        line-height: 12px;
+      }
+    }
+
+    .photo, .line { width: 100%; }
+    .line { display: none; }
+
+    .about {
+      width: 100%;
+
+      h4 {
+        margin-top: 20px;
+        font-size: 18px;
+        color: $scheduleGrey;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 21px;
+        color: $scheduleGrey;
+
+        &.descriptor {
+          color: $scheduleLightGrey;
+        }
+      }
+    }
+  }
+
+  .registration {
+    background-image: image-url('registration_bg_m.jpg');
+
+    .logo1 {
+      width: 25px;
+      height: 69px;
+      margin-top: 10px;
+      background-image: image-url('registration_logo_1_m.png');
+    }
+  }
+
+  .address {
+
+    header {
+      width: 100%;
+      height: 60%;
+      background-image: image-url('map_mock.jpg');
+    }
+
+    footer {
+      @include display-flex();
+      height: 40%;
+    }
+
+    p {
+      width: 100%;
+      margin-left: $marginLeft;
+      font-size: 10px;
+    }
+  }
+
+  .partners {
+
+    header {
+      width: 100%;
+
+      hr { width: 102px; }
+    }
+
+    ul.orgs {
+      li {
+        $padding: 50px;
+        &:first-child { padding-top: $padding; }
+        &:last-child  { padding-bottom: $padding; }
+      }
+    }
+  }
+
+  .credits {
+    height: auto;
+
+    .share { margin: 96px auto 0; }
+
+    .centerizer {
+      aside { margin: auto; }
+      .grey { display: block; }
+      p { padding: 0 $marginLeft; }
+
+      h2 {
+        padding-left: $marginLeft;
+        margin-top: 55px;
+      }
+
+    }
+
+    footer {
+      @include display-flex();
+      @include flex-direction(column);
+      @include justify-content(space-around);
+      width: 100%;
+      height: 306px;
+      padding: 60px 0;
+      border-top: none;
+
+      .logo, p { margin-left: $marginLeft; }
+      .logo { position: static; }
+      p { text-align: left; }
+    }
+  }
+}
