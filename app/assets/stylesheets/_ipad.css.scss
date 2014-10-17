@@ -55,7 +55,8 @@
         .left { width: $timeWidth + $photoWidth - $headlinePadding; }
         .right { width: $aboutWidth - $headlinePadding; }
 
-        &#intro {
+        &#intro,
+        &#special {
 
           .left { width: $timeWidth + $photoWidth - $headlinePadding; }
 
@@ -84,7 +85,8 @@
         .left { width: $timeWidth + $photoWidth - $headlinePadding * 2; }
         .right { width: $aboutWidth - $headlinePadding; }
 
-        &#intro {
+        &#intro,
+        &#special {
 
           .left { width: $timeWidth + $photoWidth - $headlinePadding * 2; }
 
