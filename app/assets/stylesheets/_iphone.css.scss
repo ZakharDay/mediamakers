@@ -58,7 +58,8 @@
       line-height: 20px;
     }
 
-    .share,
+    // .share,
+    .social-likes_single-w,
     .chevron {
       margin-left: auto;
       margin-right: auto;
@@ -239,7 +240,13 @@
   .credits {
     height: auto;
 
-    .share { margin: 96px auto 0; }
+    // .share,
+    // .social-likes_single-w { margin: 96px auto 0 !important; }
+
+    .social-likes_single-w {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
 
     .centerizer {
       aside { margin: auto; }

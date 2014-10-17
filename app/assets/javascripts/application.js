@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require landings
+//= require social-likes.min
 //= require map

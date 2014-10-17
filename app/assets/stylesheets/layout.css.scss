@@ -67,25 +67,6 @@ hr {
   }
 }
 
-.share {
-  display: block;
-  width: 188px;
-  height: 56px;
-  border: 3px solid white;
-  text-align: center;
-  line-height: 50px;
-  @include transition-property(all);
-  @include transition-duration(.3s);
-  @include transition-timing-function(ease-out);
-  color: white;
-
-  &:hover {
-    background: white;
-    color: black;
-    cursor: pointer;
-  }
-}
-
 .centerizer {
   position: relative;
   z-index: 1;
@@ -121,6 +102,8 @@ body,
     color: white !important;
   }
 }
+
+@import 'share';
 
 @import 'welcome';
 @import 'promo';
