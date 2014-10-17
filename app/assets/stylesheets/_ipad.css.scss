@@ -11,8 +11,7 @@
   .promo,
   .registration,
   .address,
-  .partners,
-  .credits {
+  .partners {
     min-width: $bodyMinWidth;
     min-height: $bodyMinHeight;
   }
@@ -32,6 +31,11 @@
   }
 
   .credits {
+    .centerizer {
+      display: block;
+      padding: 100px 0;
+    }
+
     footer { width: $body; }
   }
 }
@@ -71,6 +75,12 @@
       }
     }
   }
+
+  .credits {
+    .centerizer {
+      aside { margin: auto auto auto 290px; }
+    }
+  }
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
@@ -97,6 +107,12 @@
           }
         }
       }
+    }
+  }
+
+  .credits {
+    .centerizer {
+      aside { margin: auto auto auto 420px; }
     }
   }
 }
