@@ -241,15 +241,13 @@
     height: auto;
 
     // .share,
-    // .social-likes_single-w { margin: 96px auto 0 !important; }
-
     .social-likes_single-w {
-      margin-left: auto !important;
-      margin-right: auto !important;
+      display: block;
+      margin: 96px auto 0;
     }
 
     .centerizer {
-      aside { margin: auto; }
+      aside { margin: 0 auto; }
       .grey { display: block; }
       p { padding: 0 $marginLeft; }
 
