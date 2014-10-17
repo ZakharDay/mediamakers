@@ -1,9 +1,9 @@
 <section class="topScreenWrapper">
+  <section class="videoBackground">
+    <%= video_tag(['videos/welcome.mp4', 'videos/welcome.webm', 'videos/welcome.ogv'], controls: false, autoplay: true, loop: true, poster: 'welcome_bg.jpg') %>
+  </section>
 
   <section class="welcome">
-    <section class="videoBackground">
-      <%= video_tag(['videos/welcome.mp4', 'videos/welcome.webm', 'videos/welcome.ogv'], controls: false, autoplay: true, loop: true, poster: 'welcome_bg.jpg') %>
-    </section>
 
     <div class="centerizer">
 
@@ -23,11 +23,17 @@
   <section class="promo">
     <div class="centerizer">
       <div class="promoGif bubble">
-        <div class="playButtonCircle">
+        <div class="playButtonCircle" id="play">
           <div class="playButtonTriangle"></div>
         </div>
         <h2>Смотреть промо-ролик</h2>
       </div>
+    </div>
+  </section>
+
+  <section class="video">
+    <div class="centerizer">
+      <%= render 'video' %>
     </div>
   </section>
 

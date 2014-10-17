@@ -152,6 +152,9 @@ body,
 }
 
 .promo {
+  @include transition-property(margin);
+  @include transition-duration(.6s);
+  @include transition-timing-function(ease-out);
   // @include display-flex();
   // background-image: image-url('promo_bg.jpg');
 
@@ -202,6 +205,18 @@ body,
       color: white;
       text-align: center;
     }
+  }
+}
+
+.video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  .centerizer {
+    display: flex;
+
+    iframe { margin: auto; }
   }
 }
 

@@ -1,4 +1,8 @@
-# $ ->
+$ ->
+  $('#play').on 'click', ->
+    height = $('.welcome').height()
+    $('.welcome').css('margin-top', -height)
+    $('.promo').css('margin-top', -height)
 #   console.log 'loaded'
 #   $(".videoBackground").videobackground
 #     videoSource: [
