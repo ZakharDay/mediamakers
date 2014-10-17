@@ -216,8 +216,16 @@ body,
   .centerizer {
     display: flex;
 
-    iframe { margin: auto; }
+    iframe {
+      display: none;
+      margin: auto;
+    }
   }
+}
+
+.black {
+  background-color: black;
+  .time, .about h4, .about p { color: white !important; }
 }
 
 .schedule {
