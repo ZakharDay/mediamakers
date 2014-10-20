@@ -26,13 +26,10 @@ $aboutWidth: 686px;
   html,
   body,
   .centerizer,
-  .topScreenWrapper,
   .welcome,
   .promo,
   .registration,
-  .address,
-  .partners,
-  .credits {
+  .address {
     min-width: $bodyMinWidth;
     min-height: $bodyMinHeight;
   }
@@ -59,7 +56,10 @@ $aboutWidth: 686px;
     }
   }
 
-  // .credits {
+  .credits {
+    min-width: $bodyMinWidth;
+    height: 100%;
+    // min-height: 300px;
   //   @include display-flex();
   //
   //   .centerizer {
@@ -70,5 +70,5 @@ $aboutWidth: 686px;
   //     width: $body;
   //     margin: auto;
   //   }
-  // }
+  }
 }

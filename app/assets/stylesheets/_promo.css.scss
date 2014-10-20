@@ -21,23 +21,23 @@
     @include align-items(center);
     @include square(500px);
     margin: auto;
-    // background-image: image-url('promo.gif');
+    background-image: image-url('promo.gif');
 
     .playButtonCircle {
       // @include display-flex();
       // @include justify-content(center);
       // @include align-items(center);
       @include square(120px);
-      border: 10px solid white;
+      // border: 10px solid white;
       @include border-radius(60px);
       @include transition-property(background);
       @include transition-duration(.3s);
       @include transition-timing-function(ease-out);
 
-      &:hover {
-        background-color: rgba(255,255,255,.4);
-        cursor: pointer;
-      }
+      // &:hover {
+      //   background-color: rgba(255,255,255,.4);
+      //   cursor: pointer;
+      // }
 
       // .playButtonTriangle {
       //   width: 24px;
@@ -45,11 +45,14 @@
       //   background-image: image-url('play.png');
       // }
 
-      svg {
-        position: absolute;
-        margin: -5px 0 0 -5px;
+      svg:hover {
+        cursor: pointer;
+
+        path { fill: black; }
+        // position: absolute;
+        // margin: -5px 0 0 -5px;
       }
-      
+
       path { fill: white; }
     }
 

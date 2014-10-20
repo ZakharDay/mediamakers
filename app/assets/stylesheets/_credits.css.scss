@@ -1,5 +1,6 @@
 .credits {
   position: relative;
+  // min-height: 300px;
   background-color: #333333;
 
   & > .logoWrapper {
@@ -17,12 +18,29 @@
   }
 
   .centerizer {
+    // @include align-content(center);
+    // @include justify-content(space-between);
     // @include display-flex();
     height: calc(100% - 120px);
     // height: 100%;
 
     // aside { margin: auto auto auto 228px; }
     // aside { margin: auto auto auto 624px; }
+    aside {
+      width: 100%;
+      margin: 0;
+      padding: 40px;
+
+      .social-likes_single-w {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .greatFruit {
+        display: block;
+        margin-top: 30px;
+      }
+    }
 
     h2 {
       margin-top: 55px;
@@ -39,6 +57,7 @@
   }
 
   footer {
+    @include box-sizing(border-box);
     position: relative;
     width: $body;
     height: 120px;
@@ -55,7 +74,7 @@
     }
 
     p {
-      text-align: center;
+      // text-align: left;
       line-height: 44px;
       color: white;
     }

@@ -1,8 +1,8 @@
 @resizeVideo = () ->
   width = $('body').width()
 
-  $('.vplayer').attr('width', width / 100 * 80)
-  $('.vplayer').attr('height', (width / 100 * 80) / 1.77)
+  $('.vplayer').attr('width', width / 100 * 90)
+  $('.vplayer').attr('height', (width / 100 * 90) / 1.77)
 
 $ ->
   $('#play').on 'click', ->
