@@ -14,9 +14,12 @@
 
   <%= csrf_meta_tags %>
 
-  <meta property="og:title" content="<%= @title %>" />
-  <meta property="og:image" content="/share_image.png" />
+  <meta property="og:title"       content="<%= @title %>" />
+  <meta property="og:type"        content="website" />
+  <meta property="og:site_name"   content="MediaMakers" />
+  <meta property="og:image"       content="http://mediamakers.ru/share_image.png"   />
   <meta property="og:description" content="<%= @description %>" />
+  <meta property="og:url"         content="http://mediamakers.ru" />
 
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 </head>
