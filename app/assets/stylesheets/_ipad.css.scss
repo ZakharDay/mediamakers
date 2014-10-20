@@ -16,6 +16,12 @@
     min-height: $bodyMinHeight;
   }
 
+  .welcome {
+    .centerizer {
+      width: $body;
+    }
+  }
+
   .schedule {
     section.session {
       ul {
@@ -31,6 +37,12 @@
   }
 
   .credits {
+    height: auto;
+
+    & > .logoWrapper {
+      width: $body;
+    }
+
     .centerizer {
       display: block;
       padding: 100px 0;

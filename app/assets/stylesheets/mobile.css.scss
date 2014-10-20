@@ -1,10 +1,9 @@
-@import 'compass/reset';
 @import 'compass/css3';
 @import 'compass/css3/user-interface';
 @import 'flexbox';
 @import 'vars';
 @import 'mixins';
 
-@import 'fonts';
-
-@import 'layout';
+@import 'mobile_basics';
+@import 'ipad';
+@import 'iphone';

@@ -11,11 +11,11 @@
   @include transition-timing-function(ease-out);
   color: white;
 
-  &:hover {
-    background: white;
-    color: black;
-    cursor: pointer;
-  }
+  // &:hover {
+  //   background: white;
+  //   color: black;
+  //   cursor: pointer;
+  // }
 }
 
 .social-likes {
@@ -217,10 +217,22 @@
 .social-likes__widget_single:active,
 .social-likes__widget_single:focus,
 .social-likes__widget_active {
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.social-likes_opened .social-likes__widget_single:hover,
+.social-likes__widget_single:hover {
   background: white;
-  color: black
+  color: black;
+}
+
+// .social-likes__widget_single:active,
+.social-likes_opened .social-likes__widget_single:focus,
+.social-likes_opened .social-likes__widget_active {
+  background: none;
+  color: white;
 }
 
 // .social-likes__widget_single:hover .social-likes__icon_single,

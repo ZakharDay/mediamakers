@@ -1,7 +1,10 @@
 <section class="registration">
-  <section class="videoBackground">
-    <%= video_tag(['videos/registration.mp4', 'videos/registration.webm', 'videos/registration.ogv'], controls: false, autoplay: true, loop: true, poster: 'registration_bg.jpg') %>
-  </section>
+
+  <% unless mobile_device? %>
+    <section class="videoBackground">
+      <%= video_tag(['videos/registration.mp4', 'videos/registration.webm', 'videos/registration.ogv'], controls: false, autoplay: true, loop: true, poster: 'registration_bg.jpg') %>
+    </section>
+  <% end %>
 
   <div class="centerizer">
 

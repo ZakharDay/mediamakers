@@ -21,12 +21,12 @@
     @include align-items(center);
     @include square(500px);
     margin: auto;
-    background-image: image-url('promo.gif');
+    // background-image: image-url('promo.gif');
 
     .playButtonCircle {
-      @include display-flex();
-      @include justify-content(center);
-      @include align-items(center);
+      // @include display-flex();
+      // @include justify-content(center);
+      // @include align-items(center);
       @include square(120px);
       border: 10px solid white;
       @include border-radius(60px);
@@ -39,11 +39,18 @@
         cursor: pointer;
       }
 
-      .playButtonTriangle {
-        width: 24px;
-        height: 32px;
-        background-image: image-url('play.png');
+      // .playButtonTriangle {
+      //   width: 24px;
+      //   height: 32px;
+      //   background-image: image-url('play.png');
+      // }
+
+      svg {
+        position: absolute;
+        margin: -5px 0 0 -5px;
       }
+      
+      path { fill: white; }
     }
 
     h2 {

@@ -1,9 +1,28 @@
-@media only screen and (min-width : 1224px) {
-  $body: 960px;
-  $bodyMinWidth: 1000px;
-  $bodyMinHeight: 675px;
-  $aboutWidth: 686px;
+$body: 960px;
+$bodyMinWidth: 1000px;
+$bodyMinHeight: 675px;
+$aboutWidth: 686px;
 
+.credits {
+  // @include display-flex();
+
+  & > .logoWrapper {
+    // position: relative;
+    width: $body;
+    margin: auto;
+  }
+
+  .centerizer {
+    @include display-flex();
+    @include flex-direction(column);
+    @include justify-content(space-around);
+    @include align-items(center);
+    width: $body;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width : 1224px) {
   html,
   body,
   .centerizer,
@@ -12,9 +31,20 @@
   .promo,
   .registration,
   .address,
-  .partners {
+  .partners,
+  .credits {
     min-width: $bodyMinWidth;
     min-height: $bodyMinHeight;
+  }
+
+  // .welcome {
+  //   background-image: image-url('welcome_bg.jpg');
+  // }
+
+  .promo {
+    .promoGif {
+      background-image: image-url('promo.gif');
+    }
   }
 
   .schedule {
@@ -28,4 +58,17 @@
       }
     }
   }
+
+  // .credits {
+  //   @include display-flex();
+  //
+  //   .centerizer {
+  //     @include display-flex();
+  //     @include flex-direction(column);
+  //     @include justify-content(space-around);
+  //     @include align-items(center);
+  //     width: $body;
+  //     margin: auto;
+  //   }
+  // }
 }

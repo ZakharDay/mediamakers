@@ -35,6 +35,7 @@
   .welcome {
 
     .centerizer {
+      width: $body;
       @include align-items(flex-start);
     }
 
@@ -190,7 +191,7 @@
   }
 
   .registration {
-    background-image: image-url('registration_bg_m.jpg');
+    // background-image: image-url('registration_bg_m.jpg');
 
     .logo1 {
       width: 25px;
@@ -240,6 +241,10 @@
   .credits {
     height: auto;
 
+    & > .logoWrapper {
+      width: $body;
+    }
+
     // .share,
     .social-likes_single-w {
       display: block;
@@ -247,6 +252,7 @@
     }
 
     .centerizer {
+      padding-top: 10px;
       aside { margin: 0 auto; }
       .grey { display: block; }
       p { padding: 0 $marginLeft; }

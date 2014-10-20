@@ -1,7 +1,10 @@
 <section class="topScreenWrapper">
-  <section class="videoBackground">
-    <%= video_tag(['videos/welcome.mp4', 'videos/welcome.webm', 'videos/welcome.ogv'], controls: false, autoplay: true, loop: true, poster: 'welcome_bg.jpg') %>
-  </section>
+
+  <% unless mobile_device? %>
+    <section class="videoBackground">
+      <%= video_tag(['videos/welcome.mp4', 'videos/welcome.webm', 'videos/welcome.ogv'], controls: false, autoplay: true, loop: true, poster: 'welcome_bg.jpg') %>
+    </section>
+  <% end %>
 
   <section class="welcome">
 
@@ -11,7 +14,14 @@
 
       <aside>
         <h2>© Меняем медиаландшафт</h2>
-        <p><%= @about %></p>
+        <p>
+          Первая конференция о людях, меняющих
+          ландшафт медиа. Людях, создающих
+          инновационные проекты и продукты.
+          Людях, переворачивающих привычную
+          среду с ног на голову.
+        </p>
+        <p>29 октября в DI Telegraph.</p>
       </aside>
 
       <%= render 'share' %>
@@ -24,7 +34,7 @@
     <div class="centerizer">
       <div class="promoGif bubble">
         <div class="playButtonCircle" id="play">
-          <div class="playButtonTriangle"></div>
+          <%= render 'play_svg' %>
         </div>
         <h2>Смотреть промо-ролик</h2>
       </div>

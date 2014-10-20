@@ -1,5 +1,5 @@
 .welcome {
-  background-image: image-url('welcome_bg.jpg');
+  // background-image: image-url('welcome_bg.jpg');
   color: white;
 
   .centerizer {
@@ -8,7 +8,9 @@
     @include flex-direction(column);
     @include justify-content(space-around);
     @include align-items(center);
+    width: $body;
     // height: 100%;
+    margin: auto;
     z-index: 1;
   }
 

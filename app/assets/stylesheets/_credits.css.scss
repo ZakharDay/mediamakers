@@ -2,20 +2,27 @@
   position: relative;
   background-color: #333333;
 
-  & > .logo {
-    position: absolute;
-    width: 54px;
-    height: 71px;
-    margin: -30px calc(50% - 27px);
-    background-image: image-url('credits_logo_1.jpg');
+  & > .logoWrapper {
+    position: relative;
+    width: $body;
+    margin: 0 auto;
+
+    .logo {
+      position: absolute;
+      width: 54px;
+      height: 71px;
+      margin: -30px calc(50% - 27px);
+      background-image: image-url('credits_logo_1.jpg');
+    }
   }
 
   .centerizer {
-    @include display-flex();
+    // @include display-flex();
     height: calc(100% - 120px);
+    // height: 100%;
 
     // aside { margin: auto auto auto 228px; }
-    aside { margin: auto auto auto 624px; }
+    // aside { margin: auto auto auto 624px; }
 
     h2 {
       margin-top: 55px;
