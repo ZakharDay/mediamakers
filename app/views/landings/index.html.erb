@@ -1,4 +1,15 @@
-<%= render 'top_screen' %>
+<% if mobile_device? %>
+  <section class="mobileBackground"></section>
+<% else %>
+  <section class="videoBackground">
+    <%= video_tag(['videos/welcome.mp4', 'videos/welcome.webm', 'videos/welcome.ogv'], controls: false, autoplay: true, loop: true, poster: 'welcome_bg.jpg') %>
+  </section>
+<% end %>
+
+
+<%= render 'welcome' %>
+<%= render 'promo' %>
+<%= render 'video' %>
 <%= render 'schedule' %>
 <%= render 'registration' %>
 <%= render 'address' %>

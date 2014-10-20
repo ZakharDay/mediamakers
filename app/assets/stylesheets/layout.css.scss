@@ -23,7 +23,6 @@ hr {
 }
 
 .videoBackground {
-  position: absolute;
   @include square;
   overflow: hidden;
 
@@ -33,6 +32,12 @@ hr {
     min-width: 100%;
     min-height: 100%;
   }
+}
+
+body > .videoBackground,
+body > .mobileBackground {
+  position: fixed;
+  z-index: -1;
 }
 
 .logo {
@@ -76,7 +81,13 @@ body,
   @include square;
 }
 
-.topScreenWrapper { overflow: scroll; }
+.schedule,
+.address,
+.partners {
+  background-color: white;
+}
+
+// .topScreenWrapper { overflow: scroll; }
 
 .black {
   background-color: black;

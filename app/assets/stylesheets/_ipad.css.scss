@@ -22,6 +22,15 @@
     }
   }
 
+  .video {
+    .centerizer {
+      iframe {
+        min-width: 700px;
+        min-height: 395px;
+      }
+    }
+  }
+
   .schedule {
     section.session {
       ul {

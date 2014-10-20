@@ -1,6 +1,9 @@
 .registration {
   background-image: image-url('registration_bg.jpg');
 
+  .videoBackground,
+  .mobileBackground { position: absolute; }
+
   .centerizer {
     position: relative;
     z-index: 1;

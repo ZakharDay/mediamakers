@@ -1,4 +1,6 @@
-.topScreenWrapper, .registration {
+// .topScreenWrapper, .registration {
+.mobileBackground {
+  @include square;
   background-image: image-url('welcome_bg_m.jpg');
 }
 

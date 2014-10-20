@@ -75,6 +75,15 @@
     }
   }
 
+  .video {
+    .centerizer {
+      iframe {
+        min-width: 300px;
+        min-height: 169px;
+      }
+    }
+  }
+
   .schedule {
 
     header.top {
