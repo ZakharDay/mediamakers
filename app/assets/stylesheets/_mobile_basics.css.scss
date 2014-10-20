@@ -1,6 +1,7 @@
 .mobileBackground {
   @include square;
   background-image: image-url('welcome_bg_m.jpg');
+  background-size: cover;
 }
 
 .address {

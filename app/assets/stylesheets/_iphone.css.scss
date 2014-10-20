@@ -1,14 +1,13 @@
-// @media only screen and (max-width: 480px), only screen and (max-device-width: 480px), only screen and (min-width: 320px), only screen and (min-device-width: 320px) {
-@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
-  $marginLeft: 38px;
-  $bodyMinWidth: 100%;
-  $bodyMinHeight: 100%;
-  $timeWidth: 150px;
-  $photoWidth: 124px;
-  $photoImageWidth: 97px;
-  $aboutWidth: 100%;
-  $headlinePadding: 30px;
+$marginLeft: 38px;
+$bodyMinWidth: 100%;
+$bodyMinHeight: 100%;
+$timeWidth: 150px;
+$photoWidth: 124px;
+$photoImageWidth: 97px;
+$aboutWidth: 100%;
+$headlinePadding: 30px;
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .centerizer {
     // width: 100%;
 
@@ -39,25 +38,18 @@
       @include align-items(flex-start);
     }
 
-    .logo {
-      width: 205px;
-      height: 91px;
-      margin: 20px 0 0 $marginLeft;
-      background: image-url('welcome_logo_m.png');
-    }
-
     h2, p { margin: 15px 0 0 $marginLeft; }
 
-    h2 {
-      margin-top: 0;
-      font-size: 12px;
-    }
+    // h2 {
+      // margin-top: 0;
+      // font-size: 12px;
+    // }
 
-    p {
-      margin: 15px 0 0 38px;
-      font-size: 10px;
-      line-height: 20px;
-    }
+    // p {
+      // margin: 15px 0 0 38px;
+      // font-size: 10px;
+      // line-height: 20px;
+    // }
 
     // .share,
     .social-likes_single-w,
@@ -200,8 +192,6 @@
   }
 
   .registration {
-    // background-image: image-url('registration_bg_m.jpg');
-
     .logo1 {
       width: 25px;
       height: 69px;
@@ -211,7 +201,7 @@
   }
 
   .address {
-    
+
     header.map { height: 40%; }
 
     footer {
@@ -247,7 +237,6 @@
       width: $body;
     }
 
-    // .share,
     .social-likes_single-w {
       display: block;
       margin: 96px auto 0;
@@ -278,6 +267,73 @@
       .logo, p { margin-left: $marginLeft; }
       .logo { position: static; }
       p { text-align: left; }
+    }
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+  .welcome {
+    .logo {
+      width: 205px;
+      height: 91px;
+      margin: 20px 0 0 $marginLeft;
+      background: image-url('welcome_logo_m.png');
+    }
+
+    h2 { font-size: 12px; }
+
+    p {
+      font-size: 10px;
+      line-height: 16px;
+    }
+  }
+
+  .registration {
+    height: 140%;
+
+    h2 {
+      padding: 0 40px;
+      font-size: 10px;
+    }
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) {
+  .welcome {
+    height: 140%;
+
+    .logo {
+      width: 150px;
+      height: 66px;
+      margin: 20px 0 0 $marginLeft;
+      background: image-url('welcome_logo_m.png');
+      background-size: cover;
+    }
+
+    h2 { font-size: 14px; }
+
+    p {
+      font-size: 8px;
+      line-height: 12px;
+    }
+  }
+
+  .schedule {
+    .time {
+      span {
+        font-size: 6px;
+        text-decoration: underline;
+        vertical-align: top;
+        line-height: 8px;
+      }
+    }
+  }
+
+  .registration {
+    h2 {
+      padding: 0 60px;
+      font-size: 8px;
+      line-height: 14px;
     }
   }
 }
