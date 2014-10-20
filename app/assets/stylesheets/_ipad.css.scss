@@ -10,8 +10,7 @@
   .welcome,
   .promo,
   .registration,
-  .address,
-  .partners {
+  .address {
     min-width: $bodyMinWidth;
     min-height: $bodyMinHeight;
   }
@@ -48,16 +47,10 @@
   .credits {
     height: auto;
 
-    & > .logoWrapper {
-      width: $body;
-    }
-
-    .centerizer {
-      display: block;
-      padding: 100px 0;
-    }
-
+    & > .logoWrapper,
     footer { width: $body; }
+
+    .centerizer { display: block; }
   }
 }
 
@@ -96,12 +89,6 @@
       }
     }
   }
-
-  .credits {
-    .centerizer {
-      aside { margin: auto auto auto 290px; }
-    }
-  }
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
@@ -128,12 +115,6 @@
           }
         }
       }
-    }
-  }
-
-  .credits {
-    .centerizer {
-      aside { margin: auto auto auto 420px; }
     }
   }
 }

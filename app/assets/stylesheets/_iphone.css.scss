@@ -1,4 +1,4 @@
-$marginLeft: 38px;
+$marginLeft: 40px;
 $bodyMinWidth: 100%;
 $bodyMinHeight: 100%;
 $timeWidth: 150px;
@@ -221,26 +221,14 @@ $headlinePadding: 30px;
   .credits {
     height: auto;
 
-    & > .logoWrapper {
-      width: $body;
-    }
-
-    .social-likes_single-w {
-      display: block;
-      margin: 96px auto 0;
-    }
+    & > .logoWrapper { width: $body; }
 
     .centerizer {
-      padding-top: 10px;
+      padding-top: 30px;
+
       aside { margin: 0 auto; }
       .grey { display: block; }
-      p { padding: 0 $marginLeft; }
-
-      h2 {
-        padding-left: $marginLeft;
-        margin-top: 55px;
-      }
-
+      h2 { margin-top: 55px; }
     }
 
     footer {
