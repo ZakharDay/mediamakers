@@ -19,3 +19,10 @@ $ ->
 
     $(window).resize ->
       resizeVideo()
+
+  $(window).scroll (i) ->
+    windowHeight = $(window).height()
+    scrollVar = $(window).scrollTop()
+    videoBackgroundOpacity = 1 - scrollVar / windowHeight
+
+    $('#topVideoBackground').css('opacity', videoBackgroundOpacity) if videoBackgroundOpacity >= 0.2

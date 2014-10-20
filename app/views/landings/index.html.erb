@@ -1,7 +1,7 @@
 <% if mobile_device? %>
   <section class="mobileBackground"></section>
 <% else %>
-  <section class="videoBackground">
+  <section class="videoBackground" id="topVideoBackground">
     <%= video_tag(['videos/welcome.mp4', 'videos/welcome.webm', 'videos/welcome.ogv'], controls: false, autoplay: true, loop: true, poster: 'welcome_bg.jpg') %>
   </section>
 <% end %>
