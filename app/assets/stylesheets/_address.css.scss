@@ -14,17 +14,18 @@
 
   footer {
     @include display-flex();
+    @include flex-direction(column);
+    @include justify-content(center);
+    width: 450px;
     height: 40%;
+    margin: 0 auto;
   }
 
+  .diTelegraph { margin-bottom: 20px; }
+
   p {
-    width: 450px;
-    margin: auto;
-    padding-top: 62px;
     line-height: 17px;
-    background-image: image-url('di_telegraph_logo.png');
-    background-repeat: no-repeat;
-    background-size: 67px 42px;
-    background-position: top left;
+
+    a:hover { text-decoration: underline; }
   }
 }

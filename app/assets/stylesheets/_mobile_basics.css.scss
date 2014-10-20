@@ -1,21 +1,9 @@
-// .topScreenWrapper, .registration {
 .mobileBackground {
   @include square;
   background-image: image-url('welcome_bg_m.jpg');
 }
 
 .address {
-  p {
-    margin-top: 40px;
-  }
+  // header.map { height: 40%; }
+  // footer { height: 60%; }
 }
-
-// .welcome {
-//   background-image: image-url('welcome_bg.jpg');
-// }
-
-// .promo {
-  // .promoGif {
-  //   background-image: image-url('promo.gif');
-  // }
-// }
