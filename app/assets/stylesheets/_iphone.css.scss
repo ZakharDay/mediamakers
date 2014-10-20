@@ -65,6 +65,7 @@ $headlinePadding: 30px;
   }
 
   .schedule {
+    padding-bottom: 80px;
 
     header.top {
       padding: 80px 40px 0;
@@ -88,7 +89,7 @@ $headlinePadding: 30px;
     section.session {
       header {
         display: block;
-        margin-top: 200px;
+        margin-top: 80px;
         border-bottom: 1px solid $grey;
 
         .left {
@@ -127,6 +128,7 @@ $headlinePadding: 30px;
           border-bottom: 1px solid $grey;
 
           &:first-child { padding: 0; }
+          &.noBorder { border-bottom: 0; }
 
           .wrapper {
             display: block;
@@ -136,9 +138,9 @@ $headlinePadding: 30px;
         }
       }
 
-      &:last-child {
-        ul li { border: none; }
-      }
+      // &:last-child {
+        // ul li { border: none; }
+      // }
     }
 
     .time {
