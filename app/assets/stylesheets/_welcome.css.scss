@@ -1,5 +1,4 @@
 .welcome {
-  // background-image: image-url('welcome_bg.jpg');
   color: white;
 
   .centerizer {
@@ -9,7 +8,6 @@
     @include justify-content(space-around);
     @include align-items(center);
     width: $body;
-    // height: 100%;
     margin: auto;
     z-index: 1;
   }
@@ -35,5 +33,11 @@
     width: 32px;
     height: 21px;
     background: image-url('chevron.png');
+    cursor: pointer;
+    @include transition-property(all);
+    @include transition-duration(.3s);
+    @include transition-timing-function(ease-out);
+
+    &:hover { margin-top: 60px; }
   }
 }

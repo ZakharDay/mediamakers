@@ -26,3 +26,8 @@ $ ->
     videoBackgroundOpacity = 1 - scrollVar / windowHeight
 
     $('#topVideoBackground').css('opacity', videoBackgroundOpacity) if videoBackgroundOpacity >= 0.2
+
+  $('.chevron').on 'click', ->
+    $('html,body').animate
+      scrollTop: $('.promo').offset().top
+    , 1000
