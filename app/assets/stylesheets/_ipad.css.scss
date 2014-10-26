@@ -41,7 +41,16 @@
   }
 
   .partners {
+    height: 900px;
+
     header { width: $body; }
+
+    footer {
+      width: $body;
+
+      hr { width: $body; }
+      li { margin: 20px auto; }
+    }
   }
 
   .credits {
@@ -88,6 +97,11 @@
         }
       }
     }
+  }
+
+  .partners {
+    ul.orgs { height: 360px; }
+    footer { height: 600px; }
   }
 }
 

@@ -54,7 +54,7 @@
     ul {
       @include display-flex();
       @include flex-direction(row);
-      @include flex-wrap(no-wrap);
+      @include flex-wrap(wrap);
       @include justify-content(space-around);
       width: 80%;
       margin: 0 auto;
@@ -64,6 +64,7 @@
         text-align: center;
 
         .logo {
+          display: block;
           height: 89px;
           margin: 0 auto;
           background-color: $grey;
