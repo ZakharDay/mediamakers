@@ -3,7 +3,7 @@
   @include flex-direction(column);
   @include align-content(stretch);
   width: 100%;
-  height: 440px;
+  height: 740px;
   min-height: 440px;
 
   header {
@@ -30,7 +30,7 @@
     @include flex-direction(column);
     @include justify-content(space-around);
     // height: 60%;
-    height: 80%;
+    height: 60%;
 
     li {
       text-align: center;
@@ -44,35 +44,46 @@
     }
   }
 
-  // footer {
-  //   height: 40%;
-  //
-  //   hr { width: $body; }
-  //
-  //   ul {
-  //     @include display-flex();
-  //     @include flex-direction(row);
-  //     @include flex-wrap(no-wrap);
-  //     @include justify-content(space-around);
-  //     width: 80%;
-  //     margin: 0 auto;
-  //     padding: 60px 0 120px;
-  //
-  //     li {
-  //       text-align: center;
-  //
-  //       .logo {
-  //         width: 81px;
-  //         height: 35px;
-  //         margin: 0 auto;
-  //         background-color: $grey;
-  //       }
-  //
-  //       p {
-  //         margin-top: 28px;
-  //         line-height: 17px;
-  //       }
-  //     }
-  //   }
-  // }
+  footer {
+    width: $body;
+    height: 40%;
+    margin: 0 auto;
+
+    hr { width: $body; }
+
+    ul {
+      @include display-flex();
+      @include flex-direction(row);
+      @include flex-wrap(no-wrap);
+      @include justify-content(space-around);
+      width: 80%;
+      margin: 0 auto;
+      padding: 60px 0 120px;
+
+      li {
+        text-align: center;
+
+        .logo {
+          height: 89px;
+          margin: 0 auto;
+          background-color: $grey;
+
+          &.koxx   {
+            width: 40px;
+            background-image: image-url('partners_koxx.jpg');
+          }
+
+          &.dablbi {
+            width: 109px;
+            background-image: image-url('partners_dablbi.jpg');
+          }
+        }
+
+        p {
+          margin-top: 28px;
+          line-height: 17px;
+        }
+      }
+    }
+  }
 }
