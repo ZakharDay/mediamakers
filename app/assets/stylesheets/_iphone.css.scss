@@ -216,8 +216,6 @@ $headlinePadding: 30px;
   }
 
   .partners {
-    height: 900px;
-
     header {
       width: 100%;
 
@@ -225,8 +223,6 @@ $headlinePadding: 30px;
     }
 
     ul.orgs {
-      height: 300px;
-
       li {
         $padding: 50px;
         &:first-child { padding-top: $padding; }
@@ -236,11 +232,18 @@ $headlinePadding: 30px;
 
     footer {
       width: $body;
-      height: 500px;
 
       hr { width: $body; }
 
-      li { margin: 20px auto; }
+      ul {
+        @include flex-wrap(wrap);
+        width: $body;
+
+        li {
+          min-width: 205px;
+          margin: 30px auto;
+        }
+      }
     }
   }
 
