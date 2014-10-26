@@ -58,6 +58,7 @@
       padding: 60px 0 120px;
 
       li {
+        @include flex-basis(300px);
         text-align: center;
 
         .logo {
