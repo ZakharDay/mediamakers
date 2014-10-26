@@ -3,8 +3,6 @@
   @include flex-direction(column);
   @include align-content(stretch);
   width: 100%;
-  // height: 740px;
-  // min-height: 440px;
 
   header {
     width: $body;
@@ -30,8 +28,6 @@
     @include flex-direction(column);
     @include justify-content(space-around);
     height: 400px;
-    // height: 60%;
-    // height: 60%;
 
     li {
       text-align: center;
@@ -47,7 +43,6 @@
 
   footer {
     width: $body;
-    // height: 40%;
     margin: 0 auto;
 
     hr { width: $body; }
