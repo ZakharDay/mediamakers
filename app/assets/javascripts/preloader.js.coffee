@@ -28,5 +28,6 @@ $ ->
     $(@).preload(
       () ->
         window.videosLoaded += 1
+        console.log window.videosLoaded
         showSite() if window.videosLoaded is 2
     )
