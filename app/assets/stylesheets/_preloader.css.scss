@@ -2,13 +2,20 @@
   position: relative;
   z-index: 999;
   @include display-flex();
+  @include flex-direction(column);
+  @include justify-content(center);
+  @include align-items(center);
   @include square;
   background-color: white;
+
+  svg {
+    margin-top: -200px;
+    margin-bottom: 100px;
+  }
 
   .spinner {
     position: relative;
     @include square(50px);
-    margin: auto;
 
     li {
       position: absolute;
