@@ -26,4 +26,4 @@ $ ->
     else if $(e.target).is('menu')
       e.preventDefault()
     else
-      $('menu').toggleClass('opened')
+      $('menu').removeClass('opened')
