@@ -3,8 +3,17 @@
   <% if mobile_device? %>
     <section class="mobileBackground"></section>
   <% else %>
+
+    <%
+      if browser.firefox? || browser.opera?
+        video_file = 'videos/registration.webm'
+      else
+        video_file = 'videos/registration.mp4'
+      end
+    %>
+
     <section class="videoBackground">
-      <%= video_tag(['videos/registration.mp4', 'videos/registration.webm', 'videos/registration.ogv'], controls: false, autoplay: true, loop: true, poster: 'registration_bg.jpg') %>
+      <%= video_tag(video_file, controls: false, autoplay: true, loop: true, poster: 'registration_bg.jpg') %>
     </section>
   <% end %>
 

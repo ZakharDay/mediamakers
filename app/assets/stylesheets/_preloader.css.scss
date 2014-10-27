@@ -1,0 +1,31 @@
+.preloader {
+  position: relative;
+  z-index: 999;
+  @include display-flex();
+  @include square;
+  background-color: white;
+
+  .spinner {
+    position: relative;
+    @include square(50px);
+    margin: auto;
+
+    li {
+      position: absolute;
+      @include square(9px);
+      @include border-radius;
+      background-color: #3ef6ff;
+
+      &:nth-child(1) { margin:  0   0 0 12px;     }
+      &:nth-child(2) { margin:  0   0 0 29px;     }
+      &:nth-child(3) { margin: 12px 0 0 41px;     }
+      &:nth-child(4) { margin: 29px 0 0 41px;     }
+      &:nth-child(5) { margin: 41px 0 0 29px;     }
+      &:nth-child(6) { margin: 41px 0 0 12px;     }
+      &:nth-child(7) { margin: 29px 0 0  0;       }
+      &:nth-child(8) { margin: 12px 0 0  0;       }
+
+      &.current      { background-color: #ff00ff; }
+    }
+  }
+}

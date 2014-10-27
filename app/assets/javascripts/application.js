@@ -13,6 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery.preload.min
+//= require preloader
 //= require landings
 //= require menu
 //= require social-likes.min
