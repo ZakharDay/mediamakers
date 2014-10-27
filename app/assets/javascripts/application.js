@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require jquery.preload.min
+//= require jquery.preload
 //= require preloader
 //= require landings
 //= require menu
