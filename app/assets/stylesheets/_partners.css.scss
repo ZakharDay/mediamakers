@@ -1,7 +1,7 @@
 .partners {
-  @include display-flex();
-  @include flex-direction(column);
-  @include align-content(stretch);
+  // @include display-flex();
+  // @include flex-direction(column);
+  // @include align-content(stretch);
   width: 100%;
 
   header {
@@ -46,6 +46,7 @@
   footer {
     width: $body;
     margin: 0 auto;
+    // padding-bottom: 120px;
 
     &.infopartners {
       padding-bottom: 120px;
