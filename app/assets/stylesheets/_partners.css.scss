@@ -13,6 +13,8 @@
     text-align: center;
     border-bottom: 1px solid $grey;
 
+    // &.infopartners { padding-top: 0; }
+
     h2 {
       line-height: 30px;
 
@@ -45,6 +47,14 @@
     width: $body;
     margin: 0 auto;
 
+    &.infopartners {
+      padding-bottom: 120px;
+
+      ul {
+        padding: 60px 0 0;
+      }
+    }
+
     hr { width: $body; }
 
     ul {
@@ -55,7 +65,8 @@
       @include align-items(flex-end);
       width: 80%;
       margin: 0 auto;
-      padding: 60px 0 120px;
+      // padding: 60px 0 120px;
+      padding: 60px 0 30px;
 
       li {
         @include flex-basis(300px);
@@ -70,7 +81,7 @@
             display: block;
           }
 
-          .koxx   {
+          .koxx {
             width: 40px;
             height: 89px;
             background-image: image-url('partners_koxx.jpg');
@@ -87,6 +98,67 @@
             height: 22px;
             background-image: image-url('partners_cosmotheca.jpg');
           }
+
+
+          .village {
+            width: 106px;
+            height: 38px;
+            background-image: image-url('partners_logo_village.jpg');
+          }
+
+          .lam {
+            width: 179px;
+            height: 16px;
+            background-image: image-url('partners_logo_lam.jpg');
+          }
+
+          .aka {
+            width: 108px;
+            height: 77px;
+            background-image: image-url('partners_logo_aka.jpg');
+          }
+
+          .bg {
+            width: 172px;
+            height: 22px;
+            background-image: image-url('partners_logo_bg.jpg');
+          }
+
+          .rain {
+            width: 89px;
+            height: 39px;
+            background-image: image-url('partners_logo_rain.jpg');
+          }
+
+          .apparat {
+            width: 121px;
+            height: 16px;
+            background-image: image-url('partners_logo_apparat.jpg');
+          }
+
+          .cp {
+            width: 61px;
+            height: 45px;
+            background-image: image-url('partners_logo_cp.jpg');
+          }
+
+          .akmp {
+            width: 82px;
+            height: 29px;
+            background-image: image-url('partners_logo_akmp.jpg');
+          }
+
+          .frii {
+            width: 74px;
+            height: 21px;
+            background-image: image-url('partners_logo_frii.jpg');
+          }
+
+          .tandp {
+            width: 176px;
+            height: 18px;
+            background-image: image-url('partners_logo_tandp.jpg');
+          }
         }
 
         p {
@@ -96,4 +168,8 @@
       }
     }
   }
+}
+
+.logo {
+
 }
