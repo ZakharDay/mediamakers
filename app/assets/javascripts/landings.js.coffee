@@ -5,14 +5,14 @@
   $('.vplayer').attr('height', (width / 100 * 90) / 1.77)
 
 $ ->
-  $('#play').on 'click', ->
-
-    $('html,body').animate
-      scrollTop: $('.video').offset().top
-    , 1000
-
-    $('.video').height('100%')
-    $('iframe').fadeIn().css('visibility', 'visible')
+  # $('#play').on 'click', ->
+  #
+  #   $('html,body').animate
+  #     scrollTop: $('.video').offset().top
+  #   , 1000
+  #
+  #   $('.video').height('100%')
+  #   $('iframe').fadeIn().css('visibility', 'visible')
 
   if $('.vplayer').length
     resizeVideo()
@@ -29,5 +29,5 @@ $ ->
 
   $('.chevron').on 'click', ->
     $('html,body').animate
-      scrollTop: $('.promo').offset().top
+      scrollTop: $('.video').first().offset().top
     , 1000
