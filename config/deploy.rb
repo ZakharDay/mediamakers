@@ -11,7 +11,7 @@ server "128.199.213.187", :web, :app, :db, :primary => true
 set :scm, :git
 set :repository,  "git@github.com:ZakharDay/mediamakers.git"
 set :application, "mediamakers"
-set :branch,      "origin/video"
+set :branch,      "origin/master"
 set :rails_env,   "production"
 set :deploy_to,   "/home/#{user}/apps/#{application}"
 
