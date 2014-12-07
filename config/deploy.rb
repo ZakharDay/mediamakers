@@ -5,9 +5,9 @@ set :default_environment, {
   'PATH' => "/home/dev/.rbenv/shims:/home/dev/.rbenv/bin:$PATH"
 }
 
-set :user, ENV['username']
-set :port, ENV['ssh_port']
-server ENV['server_ip'], :web, :app, :db, :primary => true
+set :user, ENV['MEDIAMAKERS_USERNAME']
+set :port, ENV['MEDIAMAKERS_SSH_PORT']
+server ENV['MEDIAMAKERS_SERVER_IP'], :web, :app, :db, :primary => true
 set :scm, :git
 set :repository,  "git@github.com:ZakharDay/mediamakers.git"
 set :application, "mediamakers"
