@@ -11,7 +11,7 @@ server ENV['server_ip'], :web, :app, :db, :primary => true
 set :scm, :git
 set :repository,  "git@github.com:ZakharDay/mediamakers.git"
 set :application, "mediamakers"
-set :branch,      "origin/master"
+set :branch,      "origin/new_server"
 set :rails_env,   "production"
 set :deploy_to,   "/home/#{user}/apps/#{application}"
 
