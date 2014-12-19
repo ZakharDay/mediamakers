@@ -75,8 +75,11 @@
 
     p {
       // text-align: left;
+      // line-height: 18px;
       line-height: 44px;
       color: white;
+
+      a { text-decoration: underline; }
     }
   }
 }
