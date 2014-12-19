@@ -16,8 +16,8 @@ spinnerOn = (spinner) ->
   ), 60
 
 showSite = () ->
-  $('#topVideoBackground').html('<video autoplay="autoplay" loop="loop" src="/assets/' + video_file_1 + '"></video>')
-  $('#registrationVideoBackground').html('<video autoplay="autoplay" loop="loop" src="/assets/' + video_file_2 + '"></video>')
+  $('#topVideoBackground').html('<video autoplay="autoplay" loop="loop" src="' + video_file_1 + '"></video>')
+  $('#registrationVideoBackground').html('<video autoplay="autoplay" loop="loop" src="' + video_file_2 + '"></video>')
   $('body').removeClass('preloader')
   $('section.preloader').hide()
 
