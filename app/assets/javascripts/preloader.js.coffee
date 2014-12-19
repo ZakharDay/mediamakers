@@ -31,7 +31,7 @@ preloadVideo = (video_file) ->
   xhr.onreadystatechange = ->
     oneVideoLoaded() if xhr.readyState is 4 and xhr.status is 200
 
-  xhr.open "GET", "http://mediamakers.ru/assets/" + video_file, true
+  xhr.open "GET", video_file, true
   xhr.send ""
 
 $ ->

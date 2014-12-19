@@ -4,9 +4,9 @@
 
   <%
     if browser.firefox? || browser.opera?
-      video_file = 'videos/welcome.webm'
+      video_file = asset_url('videos/welcome.webm')
     else
-      video_file = 'videos/welcome.mp4'
+      video_file = asset_url('videos/welcome.mp4')
     end
   %>
 
