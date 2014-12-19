@@ -32,7 +32,8 @@ checkLoading = (videoId) ->
     , 100
 
 $ ->
-  window.videosLoaded = 0
-  spinnerOn($('.preloader'))
-  checkLoading('#topVideoBackground')
-  checkLoading('#registrationVideoBackground')
+  if $('body').hasClass('preloader')
+    window.videosLoaded = 0
+    spinnerOn($('.preloader'))
+    checkLoading('#topVideoBackground')
+    checkLoading('#registrationVideoBackground')
