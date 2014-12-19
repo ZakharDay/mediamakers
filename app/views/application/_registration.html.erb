@@ -6,18 +6,14 @@
 
     <%
       if browser.firefox? || browser.opera?
-        video_file = asset_path('videos/registration.webm')
+        video_file = 'videos/registration.webm'
       else
-        video_file = asset_path('videos/registration.mp4')
+        video_file = 'videos/registration.mp4'
       end
     %>
 
-    <script>
-      var video_file_2 = "<%= video_file %>";
-    </script>
-
-    <section class="videoBackground" id="registrationVideoBackground">
-      <%#= video_tag(video_file, controls: false, autoplay: true, loop: true, poster: 'registration_bg.jpg') %>
+    <section class="videoBackground">
+      <%= video_tag(video_file, controls: false, autoplay: true, loop: true, poster: 'registration_bg.jpg', id: 'registrationVideoBackground') %>
     </section>
   <% end %>
 

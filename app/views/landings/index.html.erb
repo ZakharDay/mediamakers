@@ -4,18 +4,14 @@
 
   <%
     if browser.firefox? || browser.opera?
-      video_file = asset_path('videos/welcome.webm')
+      video_file = 'videos/welcome.webm'
     else
-      video_file = asset_path('videos/welcome.mp4')
+      video_file = 'videos/welcome.mp4'
     end
   %>
 
-  <script>
-    var video_file_1 = "<%= video_file %>";
-  </script>
-
-  <section class="videoBackground" id="topVideoBackground">
-    <%#= video_tag(video_file, controls: false, autoplay: true, loop: true, poster: 'welcome_bg.jpg') %>
+  <section class="videoBackground">
+    <%= video_tag(video_file, controls: false, autoplay: true, loop: true, poster: 'welcome_bg.jpg', id: 'topVideoBackground') %>
   </section>
 <% end %>
 

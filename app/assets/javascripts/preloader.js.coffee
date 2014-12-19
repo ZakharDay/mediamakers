@@ -16,8 +16,8 @@ spinnerOn = (spinner) ->
   ), 60
 
 showSite = () ->
-  $('#topVideoBackground').html('<video autoplay="autoplay" loop="loop" src="' + video_file_1 + '"></video>')
-  $('#registrationVideoBackground').html('<video autoplay="autoplay" loop="loop" src="' + video_file_2 + '"></video>')
+  # $('#topVideoBackground').html('<video autoplay="autoplay" loop="loop" src="' + video_file_1 + '"></video>')
+  # $('#registrationVideoBackground').html('<video autoplay="autoplay" loop="loop" src="' + video_file_2 + '"></video>')
   $('body').removeClass('preloader')
   $('section.preloader').hide()
 
@@ -25,17 +25,19 @@ oneVideoLoaded = () ->
   window.videosLoaded += 1
   showSite() if window.videosLoaded == 2
 
-preloadVideo = (video_file) ->
-  xhr = new XMLHttpRequest()
+checkLoading = (videoId) ->
 
-  xhr.onreadystatechange = ->
-    oneVideoLoaded() if xhr.readyState is 4 and xhr.status is 200
-
-  xhr.open "GET", video_file, true
-  xhr.send ""
+  if $(videoId)[0].readyState == 4
+    console.log 'ready state 4'
+    oneVideoLoaded()
+  else
+    console.log 'not loaded'
+    setTimeout ->
+      checkLoading(videoId)
+    , 1000
 
 $ ->
   window.videosLoaded = 0
   spinnerOn($('.preloader'))
-  preloadVideo(video_file_1)
-  preloadVideo(video_file_2)
+  checkLoading('#topVideoBackground')
+  checkLoading('#registrationVideoBackground')
