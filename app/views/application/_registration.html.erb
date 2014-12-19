@@ -6,9 +6,9 @@
 
     <%
       if browser.firefox? || browser.opera?
-        video_file = asset_url('videos/registration.webm')
+        video_file = asset_path('videos/registration.webm')
       else
-        video_file = asset_url('videos/registration.mp4')
+        video_file = asset_path('videos/registration.mp4')
       end
     %>
 
