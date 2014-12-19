@@ -1,5 +1,10 @@
-.preloader {
-  position: relative;
+body.preloader {
+  max-height: 100% !important;
+  overflow: hidden;
+}
+
+section.preloader {
+  position: fixed;
   z-index: 999;
   @include display-flex();
   @include flex-direction(column);

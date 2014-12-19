@@ -10,8 +10,12 @@
     end
   %>
 
+  <script>
+    var video_file_1 = "<%= video_file %>";
+  </script>
+
   <section class="videoBackground" id="topVideoBackground">
-    <%= video_tag(video_file, controls: false, autoplay: true, loop: true, poster: 'welcome_bg.jpg') %>
+    <%#= video_tag(video_file, controls: false, autoplay: true, loop: true, poster: 'welcome_bg.jpg') %>
   </section>
 <% end %>
 

@@ -16,17 +16,26 @@ spinnerOn = (spinner) ->
   ), 60
 
 showSite = () ->
-  $('.preloader').hide()
+  $('#topVideoBackground').html('<video autoplay="autoplay" loop="loop" src="/assets/' + video_file_1 + '"></video>')
+  $('#registrationVideoBackground').html('<video autoplay="autoplay" loop="loop" src="/assets/' + video_file_2 + '"></video>')
+  $('body').removeClass('preloader')
+  $('section.preloader').hide()
+
+oneVideoLoaded = () ->
+  window.videosLoaded += 1
+  showSite() if window.videosLoaded == 2
+
+preloadVideo = (video_file) ->
+  xhr = new XMLHttpRequest()
+
+  xhr.onreadystatechange = ->
+    oneVideoLoaded() if xhr.readyState is 4 and xhr.status is 200
+
+  xhr.open "GET", "http://localhost:3000/assets/" + video_file, true
+  xhr.send ""
 
 $ ->
   window.videosLoaded = 0
-  loaded = window.videosLoaded
-
   spinnerOn($('.preloader'))
-
-  $('video').each ->
-    $(@).preload(
-      () ->
-        window.videosLoaded += 1
-        showSite() if window.videosLoaded is 2
-    )
+  preloadVideo(video_file_1)
+  preloadVideo(video_file_2)
