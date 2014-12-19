@@ -1,43 +1,43 @@
 body.preloader {
   max-height: 100% !important;
   overflow: hidden;
-}
 
-section.preloader {
-  position: fixed;
-  z-index: 999;
-  @include display-flex();
-  @include flex-direction(column);
-  @include justify-content(center);
-  @include align-items(center);
-  @include square;
-  background-color: white;
+  section.preloader {
+    position: fixed;
+    z-index: 999;
+    @include display-flex();
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include align-items(center);
+    @include square;
+    background-color: white;
 
-  svg {
-    margin-top: -200px;
-    margin-bottom: 100px;
-  }
+    svg {
+      margin-top: -200px;
+      margin-bottom: 100px;
+    }
 
-  .spinner {
-    position: relative;
-    @include square(50px);
+    .spinner {
+      position: relative;
+      @include square(50px);
 
-    li {
-      position: absolute;
-      @include square(9px);
-      @include border-radius;
-      background-color: #3ef6ff;
+      li {
+        position: absolute;
+        @include square(9px);
+        @include border-radius;
+        background-color: #3ef6ff;
 
-      &:nth-child(1) { margin:  0   0 0 12px;     }
-      &:nth-child(2) { margin:  0   0 0 29px;     }
-      &:nth-child(3) { margin: 12px 0 0 41px;     }
-      &:nth-child(4) { margin: 29px 0 0 41px;     }
-      &:nth-child(5) { margin: 41px 0 0 29px;     }
-      &:nth-child(6) { margin: 41px 0 0 12px;     }
-      &:nth-child(7) { margin: 29px 0 0  0;       }
-      &:nth-child(8) { margin: 12px 0 0  0;       }
+        &:nth-child(1) { margin:  0   0 0 12px;     }
+        &:nth-child(2) { margin:  0   0 0 29px;     }
+        &:nth-child(3) { margin: 12px 0 0 41px;     }
+        &:nth-child(4) { margin: 29px 0 0 41px;     }
+        &:nth-child(5) { margin: 41px 0 0 29px;     }
+        &:nth-child(6) { margin: 41px 0 0 12px;     }
+        &:nth-child(7) { margin: 29px 0 0  0;       }
+        &:nth-child(8) { margin: 12px 0 0  0;       }
 
-      &.current      { background-color: #ff00ff; }
+        &.current      { background-color: #ff00ff; }
+      }
     }
   }
 }
