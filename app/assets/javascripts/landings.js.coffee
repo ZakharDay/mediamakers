@@ -16,9 +16,6 @@ $ ->
     scrollVar = $(window).scrollTop()
     videoBackgroundOpacity = 1 - scrollVar / windowHeight
 
-    console.log windowHeight
-    console.log scrollVar
-
     $('#topVideoBackground').css('opacity', videoBackgroundOpacity) if videoBackgroundOpacity >= 0.2
     $('#topVideoBackground').css('opacity', 0) if scrollVar / windowHeight >= 4
 
