@@ -1,7 +1,4 @@
 .partners {
-  // @include display-flex();
-  // @include flex-direction(column);
-  // @include align-content(stretch);
   width: 100%;
 
   header {
@@ -12,8 +9,6 @@
     margin-right: auto;
     text-align: center;
     border-bottom: 1px solid $grey;
-
-    // &.infopartners { padding-top: 0; }
 
     h2 {
       line-height: 30px;
@@ -46,7 +41,6 @@
   footer {
     width: $body;
     margin: 0 auto;
-    // padding-bottom: 120px;
 
     &.infopartners {
       padding-bottom: 120px;
@@ -66,7 +60,6 @@
       @include align-items(flex-end);
       width: 80%;
       margin: 0 auto;
-      // padding: 60px 0 120px;
       padding: 60px 0 30px;
 
       li {
@@ -169,8 +162,4 @@
       }
     }
   }
-}
-
-.logo {
-
 }

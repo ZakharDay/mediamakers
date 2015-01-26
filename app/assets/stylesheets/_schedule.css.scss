@@ -80,8 +80,6 @@
 
       &#intro,
       &#special {
-        // margin-top: 70px;
-
         .left {
           width: $timeWidth + $photoWidth - $headlinePadding;
         }
@@ -158,7 +156,6 @@
 
       &.descriptor {
         margin-top: 10px;
-        // color: $scheduleLightGrey;
       }
     }
   }

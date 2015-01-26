@@ -9,8 +9,6 @@ $headlinePadding: 30px;
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .centerizer {
-    // width: 100%;
-
     aside {
       width: 100%;
       margin-left: 0;
@@ -87,13 +85,8 @@ $headlinePadding: 30px;
     }
 
     section.blackSeparator {
-      // @include display-flex();
-      // height: 170px;
       font-size: 16px;
       line-height: 22px;
-      // background-color: black;
-      // color: white;
-      // text-align: center;
 
       p { padding: 0 40px; }
     }
@@ -136,7 +129,6 @@ $headlinePadding: 30px;
         li {
           width: 100%;
           display: block;
-          // padding: 0 40px 40px;
           border-bottom: 1px solid $grey;
 
           &:first-child { padding: 0; }
@@ -149,10 +141,6 @@ $headlinePadding: 30px;
           }
         }
       }
-
-      // &:last-child {
-        // ul li { border: none; }
-      // }
     }
 
     .time {
@@ -271,12 +259,6 @@ $headlinePadding: 30px;
 
       .logo, p { margin-left: $marginLeft; }
       .logo { position: static; }
-
-      // p {
-        // font-size: 10px;
-        // line-height: 16px;
-        // text-align: left;
-      // }
     }
   }
 }
@@ -299,8 +281,6 @@ $headlinePadding: 30px;
   }
 
   .registration {
-    // height: 140%;
-
     h2 {
       padding: 0 40px;
       font-size: 10px;

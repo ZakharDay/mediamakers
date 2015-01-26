@@ -1,6 +1,5 @@
 .credits {
   position: relative;
-  // min-height: 300px;
   background-color: #333333;
 
   & > .logoWrapper {
@@ -18,14 +17,8 @@
   }
 
   .centerizer {
-    // @include align-content(center);
-    // @include justify-content(space-between);
-    // @include display-flex();
     height: calc(100% - 120px);
-    // height: 100%;
 
-    // aside { margin: auto auto auto 228px; }
-    // aside { margin: auto auto auto 624px; }
     aside {
       width: 100%;
       margin: 0;
@@ -74,9 +67,6 @@
     }
 
     p {
-      // text-align: left;
-      // line-height: 18px;
-      // line-height: 44px;
       color: white;
 
       a { text-decoration: underline; }

@@ -1,5 +1,4 @@
 .video {
-  // position: absolute;
   width: 100%;
   height: auto;
   padding: 25px 0;
@@ -9,13 +8,9 @@
     padding: 25px 0;
 
     iframe {
-      // display: none;
-      // width: 80%;
-      // height: calc();
       min-width: 1000px;
       min-height: 565px;
       margin: auto;
-      // visibility: hidden;
     }
   }
 }

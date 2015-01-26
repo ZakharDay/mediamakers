@@ -2,12 +2,9 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.1.6'
 
-# group :development, :test do
 gem 'sqlite3'
-# end
 
 group :development do
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'capistrano-rails'
   gem 'capistrano', '~> 2.15'
