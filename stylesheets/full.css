@@ -1,0 +1,316 @@
+/* line 6, ../sass/_desktop.scss */
+html.touchno-touch .mobileBackground {
+  display: none;
+}
+/* line 10, ../sass/_desktop.scss */
+html.touchno-touch menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 74px;
+  height: 74px;
+  background-image: url(../images/menu_bg.jpg);
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -moz-transition-delay: 350ms;
+  -o-transition-delay: 350ms;
+  -webkit-transition-delay: 350ms;
+  transition-delay: 350ms;
+}
+/* line 22, ../sass/_desktop.scss */
+html.touchno-touch menu.opened {
+  width: 416px;
+  height: 100%;
+  min-height: 500px;
+  -moz-transition-delay: 0;
+  -o-transition-delay: 0;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+}
+/* line 28, ../sass/_desktop.scss */
+html.touchno-touch menu.opened i ul {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+/* line 30, ../sass/_desktop.scss */
+html.touchno-touch menu.opened .items li {
+  opacity: 1;
+  visibility: visible;
+  -moz-transition-delay: 350ms;
+  -o-transition-delay: 350ms;
+  -webkit-transition-delay: 350ms;
+  transition-delay: 350ms;
+}
+/* line 37, ../sass/_desktop.scss */
+html.touchno-touch menu i {
+  position: absolute;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 74px;
+  height: 74px;
+  cursor: pointer;
+}
+/* line 43, ../sass/_desktop.scss */
+html.touchno-touch menu i ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  width: 27px;
+  height: 22px;
+  margin: auto;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+/* line 54, ../sass/_desktop.scss */
+html.touchno-touch menu i ul li {
+  width: 27px;
+  height: 4px;
+  background-color: white;
+}
+/* line 62, ../sass/_desktop.scss */
+html.touchno-touch menu .items {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+/* line 69, ../sass/_desktop.scss */
+html.touchno-touch menu .items li {
+  width: 192px;
+  margin: 14px 0;
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -moz-transition-delay: 0;
+  -o-transition-delay: 0;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+}
+/* line 80, ../sass/_desktop.scss */
+html.touchno-touch menu .items li a:hover,
+html.touchno-touch menu .items li a.current {
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* line 90, ../sass/_desktop.scss */
+html.touchno-touch .credits > .logoWrapper {
+  width: 960px;
+  margin: auto;
+}
+/* line 95, ../sass/_desktop.scss */
+html.touchno-touch .credits .centerizer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 960px;
+  margin: auto;
+}
+@media only screen and (min-width: 1224px) {
+  /* line 106, ../sass/_desktop.scss */
+  html.touchno-touch html,
+  html.touchno-touch body,
+  html.touchno-touch .centerizer,
+  html.touchno-touch .welcome,
+  html.touchno-touch .promo,
+  html.touchno-touch .registration,
+  html.touchno-touch .address {
+    min-width: 1000px;
+    min-height: 675px;
+  }
+  /* line 118, ../sass/_desktop.scss */
+  html.touchno-touch .promo .promoGif {
+    background-image: url(../images/promo.gif);
+  }
+  /* line 124, ../sass/_desktop.scss */
+  html.touchno-touch .schedule .about {
+    width: 686px;
+  }
+  /* line 129, ../sass/_desktop.scss */
+  html.touchno-touch .schedule section.session ul li .wrapper {
+    width: 960px;
+  }
+  /* line 135, ../sass/_desktop.scss */
+  html.touchno-touch .credits {
+    min-width: 1000px;
+    height: auto;
+  }
+}
+
+/* line 2, ../sass/_preloader.scss */
+html.preloader.touchno-touch body {
+  max-height: 100% !important;
+  overflow: hidden;
+}
+/* line 6, ../sass/_preloader.scss */
+html.preloader.touchno-touch body section#preloader {
+  position: fixed;
+  z-index: 999;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+/* line 16, ../sass/_preloader.scss */
+html.preloader.touchno-touch body section#preloader svg {
+  margin-top: -200px;
+  margin-bottom: 100px;
+}
+/* line 21, ../sass/_preloader.scss */
+html.preloader.touchno-touch body section#preloader .spinner {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+/* line 25, ../sass/_preloader.scss */
+html.preloader.touchno-touch body section#preloader .spinner li {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #3ef6ff;
+}
+/* line 31, ../sass/_preloader.scss */
+html.preloader.touchno-touch body section#preloader .spinner li:nth-child(1) {
+  margin: 0   0 0 12px;
+}
+/* line 32, ../sass/_preloader.scss */
+html.preloader.touchno-touch body section#preloader .spinner li:nth-child(2) {
+  margin: 0   0 0 29px;
+}
+/* line 33, ../sass/_preloader.scss */
+html.preloader.touchno-touch body section#preloader .spinner li:nth-child(3) {
+  margin: 12px 0 0 41px;
+}
+/* line 34, ../sass/_preloader.scss */
+html.preloader.touchno-touch body section#preloader .spinner li:nth-child(4) {
+  margin: 29px 0 0 41px;
+}
+/* line 35, ../sass/_preloader.scss */
+html.preloader.touchno-touch body section#preloader .spinner li:nth-child(5) {
+  margin: 41px 0 0 29px;
+}
+/* line 36, ../sass/_preloader.scss */
+html.preloader.touchno-touch body section#preloader .spinner li:nth-child(6) {
+  margin: 41px 0 0 12px;
+}
+/* line 37, ../sass/_preloader.scss */
+html.preloader.touchno-touch body section#preloader .spinner li:nth-child(7) {
+  margin: 29px 0 0  0;
+}
+/* line 38, ../sass/_preloader.scss */
+html.preloader.touchno-touch body section#preloader .spinner li:nth-child(8) {
+  margin: 12px 0 0  0;
+}
+/* line 40, ../sass/_preloader.scss */
+html.preloader.touchno-touch body section#preloader .spinner li.current {
+  background-color: #ff00ff;
+}
+
+/* line 48, ../sass/_preloader.scss */
+html.touchno-touch body {
+  overflow: visible;
+}

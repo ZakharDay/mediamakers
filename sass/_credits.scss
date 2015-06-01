@@ -1,0 +1,75 @@
+.credits {
+  position: relative;
+  background-color: #333333;
+
+  & > .logoWrapper {
+    position: relative;
+    width: $body;
+    margin: 0 auto;
+
+    .logo {
+      position: absolute;
+      width: 54px;
+      height: 71px;
+      margin: -30px calc(50% - 27px);
+      background-image: url(../images/credits_logo_1.jpg);
+    }
+  }
+
+  .centerizer {
+    height: calc(100% - 120px);
+
+    aside {
+      width: 100%;
+      margin: 0;
+      padding: 40px;
+
+      .social-likes_single-w {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .greatFruit {
+        display: block;
+        margin-top: 30px;
+      }
+    }
+
+    h2 {
+      margin-top: 55px;
+      font-size: 18px;
+    }
+
+    p {
+      line-height: 17px;
+
+      &:first-of-type { margin-top: 42px; }
+    }
+
+    .grey { color: #4d4d4d; }
+  }
+
+  footer {
+    @include box-sizing(border-box);
+    position: relative;
+    width: $body;
+    height: 120px;
+    margin: 0 auto;
+    padding: 38px 0;
+    border-top: 1px solid black;
+
+    .logo {
+      position: absolute;
+      width: 98px;
+      height: 44px;
+      right: 0;
+      background-image: url(../images/credits_logo_2.png);
+    }
+
+    p {
+      color: white;
+
+      a { text-decoration: underline; }
+    }
+  }
+}

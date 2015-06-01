@@ -1,0 +1,13 @@
+section#preloader,
+body > menu,
+.videoBackground {
+  display: none;
+}
+
+.mobileBackground {
+  @include square;
+  background-image: url(../images/welcome_bg_m.jpg);
+  background-size: cover;
+}
+
+.promoGif { background-image: none !important; }

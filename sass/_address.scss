@@ -1,0 +1,31 @@
+.address {
+
+  header.map {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    background-image: url(../images/map_mock.jpg);
+
+    #map {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  footer {
+    @include display-flex();
+    @include flex-direction(column);
+    @include justify-content(center);
+    width: 450px;
+    height: 40%;
+    margin: 0 auto;
+  }
+
+  .diTelegraph { margin-bottom: 20px; }
+
+  p {
+    line-height: 17px;
+
+    a:hover { text-decoration: underline; }
+  }
+}

@@ -1,0 +1,165 @@
+.partners {
+  width: 100%;
+
+  header {
+    width: $body;
+    height: 62px;
+    padding-top: 47px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-bottom: 1px solid $grey;
+
+    h2 {
+      line-height: 30px;
+
+      span {
+        padding: 0 $headlinePadding;
+        background-color: white;
+      }
+    }
+  }
+
+  ul.orgs {
+    @include display-flex();
+    @include flex-direction(column);
+    @include justify-content(space-around);
+    height: 400px;
+
+    li {
+      text-align: center;
+
+      $padding: 60px;
+      &:first-child { padding-top: $padding; }
+      &:last-child  { padding-bottom: $padding; }
+
+      .logo { margin: 0 auto; }
+      p { margin-top: 20px; }
+    }
+  }
+
+  footer {
+    width: $body;
+    margin: 0 auto;
+
+    &.infopartners {
+      padding-bottom: 120px;
+
+      ul {
+        padding: 60px 0 0;
+      }
+    }
+
+    hr { width: $body; }
+
+    ul {
+      @include display-flex();
+      @include flex-direction(row);
+      @include flex-wrap(no-wrap);
+      @include justify-content(space-around);
+      @include align-items(flex-end);
+      width: 80%;
+      margin: 0 auto;
+      padding: 60px 0 30px;
+
+      li {
+        @include flex-basis(300px);
+        text-align: center;
+
+        .logo {
+          @include display-flex();
+          height: 90px;
+          margin: auto;
+
+          a {
+            display: block;
+          }
+
+          .koxx {
+            width: 40px;
+            height: 89px;
+            background-image: url(../images/partners_koxx.jpg);
+          }
+
+          .dablbi {
+            width: 109px;
+            height: 89px;
+            background-image: url(../images/partners_dablbi.jpg);
+          }
+
+          .cosmotheca {
+            width: 205px;
+            height: 22px;
+            background-image: url(../images/partners_cosmotheca.jpg);
+          }
+
+
+          .village {
+            width: 106px;
+            height: 38px;
+            background-image: url(../images/partners_logo_village.jpg);
+          }
+
+          .lam {
+            width: 179px;
+            height: 16px;
+            background-image: url(../images/partners_logo_lam.jpg);
+          }
+
+          .aka {
+            width: 108px;
+            height: 77px;
+            background-image: url(../images/partners_logo_aka.jpg);
+          }
+
+          .bg {
+            width: 172px;
+            height: 22px;
+            background-image: url(../images/partners_logo_bg.jpg);
+          }
+
+          .rain {
+            width: 89px;
+            height: 39px;
+            background-image: url(../images/partners_logo_rain.jpg);
+          }
+
+          .apparat {
+            width: 121px;
+            height: 16px;
+            background-image: url(../images/partners_logo_apparat.jpg);
+          }
+
+          .cp {
+            width: 61px;
+            height: 45px;
+            background-image: url(../images/partners_logo_cp.jpg);
+          }
+
+          .akmp {
+            width: 82px;
+            height: 29px;
+            background-image: url(../images/partners_logo_akmp.jpg);
+          }
+
+          .frii {
+            width: 74px;
+            height: 21px;
+            background-image: url(../images/partners_logo_frii.jpg);
+          }
+
+          .tandp {
+            width: 176px;
+            height: 18px;
+            background-image: url(../images/partners_logo_tandp.jpg);
+          }
+        }
+
+        p {
+          margin-top: 28px;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+}

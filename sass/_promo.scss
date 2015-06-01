@@ -1,0 +1,45 @@
+.promo {
+  @include transition-property(margin);
+  @include transition-duration(.6s);
+  @include transition-timing-function(ease-out);
+
+  .centerizer {
+    @include display-flex();
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include align-items(center);
+  }
+
+  .promoGif {
+    @include display-flex();
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include align-items(center);
+    @include square(500px);
+    margin: auto;
+    background-image: url(../images/promo.gif);
+
+    .playButtonCircle {
+      @include square(100px);
+      @include border-radius(60px);
+      @include transition-property(background);
+      @include transition-duration(.3s);
+      @include transition-timing-function(ease-out);
+
+      svg:hover {
+        cursor: pointer;
+
+        path { fill: black; }
+      }
+
+      path { fill: white; }
+    }
+
+    h2 {
+      margin-top: 28px;
+      font-size: 21px;
+      color: white;
+      text-align: center;
+    }
+  }
+}
