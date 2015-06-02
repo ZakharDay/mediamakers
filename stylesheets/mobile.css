@@ -15,8 +15,9 @@ html.touchtouch .mobileBackground {
 html.touchtouch .promoGif {
   background-image: none !important;
 }
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 6, ../sass/_ipad.scss */
+  /* line 7, ../sass/_ipad.scss */
   html.touchtouch html,
   html.touchtouch body,
   html.touchtouch .centerizer,
@@ -28,112 +29,112 @@ html.touchtouch .promoGif {
     min-width: 100%;
     min-height: 100%;
   }
-  /* line 19, ../sass/_ipad.scss */
+  /* line 20, ../sass/_ipad.scss */
   html.touchtouch .welcome .centerizer {
     width: calc(100% - 40px);
   }
-  /* line 26, ../sass/_ipad.scss */
+  /* line 27, ../sass/_ipad.scss */
   html.touchtouch .video .centerizer iframe {
     min-width: 700px;
     min-height: 395px;
   }
-  /* line 37, ../sass/_ipad.scss */
+  /* line 38, ../sass/_ipad.scss */
   html.touchtouch .schedule section.session ul li .wrapper {
     width: calc(100% - 40px);
   }
-  /* line 44, ../sass/_ipad.scss */
+  /* line 45, ../sass/_ipad.scss */
   html.touchtouch .partners header,
   html.touchtouch .partners footer,
   html.touchtouch .partners footer hr {
     width: calc(100% - 40px);
   }
-  /* line 49, ../sass/_ipad.scss */
+  /* line 50, ../sass/_ipad.scss */
   html.touchtouch .credits {
     height: auto;
   }
-  /* line 52, ../sass/_ipad.scss */
+  /* line 53, ../sass/_ipad.scss */
   html.touchtouch .credits > .logoWrapper,
   html.touchtouch .credits footer {
     width: calc(100% - 40px);
   }
-  /* line 55, ../sass/_ipad.scss */
+  /* line 56, ../sass/_ipad.scss */
   html.touchtouch .credits .centerizer {
     display: block;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* line 65, ../sass/_ipad.scss */
+  /* line 68, ../sass/_ipad.scss */
   html.touchtouch .schedule header.top h2 {
     padding-left: 20px;
     text-align: left;
   }
-  /* line 71, ../sass/_ipad.scss */
+  /* line 74, ../sass/_ipad.scss */
   html.touchtouch .schedule .about {
     width: 486px;
   }
-  /* line 75, ../sass/_ipad.scss */
+  /* line 78, ../sass/_ipad.scss */
   html.touchtouch .schedule section.session header .left {
     width: 244px;
   }
-  /* line 76, ../sass/_ipad.scss */
+  /* line 79, ../sass/_ipad.scss */
   html.touchtouch .schedule section.session header .right {
     width: 456px;
   }
-  /* line 81, ../sass/_ipad.scss */
+  /* line 84, ../sass/_ipad.scss */
   html.touchtouch .schedule section.session header#intro .left, html.touchtouch .schedule section.session header#special .left {
     width: 244px;
   }
-  /* line 83, ../sass/_ipad.scss */
+  /* line 86, ../sass/_ipad.scss */
   html.touchtouch .schedule section.session header#intro .right, html.touchtouch .schedule section.session header#special .right {
     width: 516px;
   }
-  /* line 86, ../sass/_ipad.scss */
+  /* line 89, ../sass/_ipad.scss */
   html.touchtouch .schedule section.session header#intro .right span, html.touchtouch .schedule section.session header#special .right span {
     padding-left: 30px;
   }
-  /* line 97, ../sass/_ipad.scss */
+  /* line 100, ../sass/_ipad.scss */
   html.touchtouch .partners footer ul {
     width: 960px;
   }
-  /* line 100, ../sass/_ipad.scss */
+  /* line 103, ../sass/_ipad.scss */
   html.touchtouch .partners footer ul li {
     min-width: 205px;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* line 113, ../sass/_ipad.scss */
+  /* line 119, ../sass/_ipad.scss */
   html.touchtouch .schedule .about {
     width: 686px;
   }
-  /* line 117, ../sass/_ipad.scss */
+  /* line 123, ../sass/_ipad.scss */
   html.touchtouch .schedule section.session header .left {
     width: 214px;
   }
-  /* line 118, ../sass/_ipad.scss */
+  /* line 124, ../sass/_ipad.scss */
   html.touchtouch .schedule section.session header .right {
     width: 656px;
   }
-  /* line 123, ../sass/_ipad.scss */
+  /* line 129, ../sass/_ipad.scss */
   html.touchtouch .schedule section.session header#intro .left, html.touchtouch .schedule section.session header#special .left {
     width: 214px;
   }
-  /* line 125, ../sass/_ipad.scss */
+  /* line 131, ../sass/_ipad.scss */
   html.touchtouch .schedule section.session header#intro .right, html.touchtouch .schedule section.session header#special .right {
     width: 716px;
   }
-  /* line 128, ../sass/_ipad.scss */
+  /* line 134, ../sass/_ipad.scss */
   html.touchtouch .schedule section.session header#intro .right span, html.touchtouch .schedule section.session header#special .right span {
     padding-left: 30px;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 12, ../sass/_iphone.scss */
+  /* line 16, ../sass/_iphone.scss */
   html.touchtouch .centerizer aside {
     width: 100%;
     margin-left: 0;
     text-align: left !important;
   }
-  /* line 19, ../sass/_iphone.scss */
+  /* line 23, ../sass/_iphone.scss */
   html.touchtouch html,
   html.touchtouch body,
   html.touchtouch .centerizer,
@@ -146,258 +147,258 @@ html.touchtouch .promoGif {
     min-width: 100%;
     min-height: 100%;
   }
-  /* line 34, ../sass/_iphone.scss */
+  /* line 38, ../sass/_iphone.scss */
   html.touchtouch .welcome .centerizer {
-    width: 960px;
+    width: calc(100% - 40px);
     -webkit-box-align: start;
     -moz-box-align: start;
     -ms-flex-align: start;
     -webkit-align-items: flex-start;
     align-items: flex-start;
   }
-  /* line 39, ../sass/_iphone.scss */
+  /* line 43, ../sass/_iphone.scss */
   html.touchtouch .welcome h2, html.touchtouch .welcome p {
     margin: 15px 0 0 40px;
   }
-  /* line 41, ../sass/_iphone.scss */
+  /* line 45, ../sass/_iphone.scss */
   html.touchtouch .welcome .social-likes_single-w,
   html.touchtouch .welcome .chevron {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 50, ../sass/_iphone.scss */
+  /* line 54, ../sass/_iphone.scss */
   html.touchtouch .promo .promoGif {
     width: 280px;
     height: 280px;
   }
-  /* line 52, ../sass/_iphone.scss */
+  /* line 56, ../sass/_iphone.scss */
   html.touchtouch .promo .promoGif h2 {
     font-size: 16px;
   }
-  /* line 58, ../sass/_iphone.scss */
+  /* line 62, ../sass/_iphone.scss */
   html.touchtouch .video .centerizer iframe {
     min-width: 300px;
     min-height: 169px;
   }
-  /* line 65, ../sass/_iphone.scss */
+  /* line 69, ../sass/_iphone.scss */
   html.touchtouch .schedule {
     padding-bottom: 80px;
   }
-  /* line 68, ../sass/_iphone.scss */
+  /* line 72, ../sass/_iphone.scss */
   html.touchtouch .schedule header.top {
     padding: 80px 40px 0;
   }
-  /* line 71, ../sass/_iphone.scss */
+  /* line 75, ../sass/_iphone.scss */
   html.touchtouch .schedule header.top h2 {
     text-align: left;
     font-size: 20px;
   }
-  /* line 76, ../sass/_iphone.scss */
+  /* line 80, ../sass/_iphone.scss */
   html.touchtouch .schedule header.top aside {
     position: absolute;
     width: 66px;
     top: 40px;
     right: 40px;
   }
-  /* line 83, ../sass/_iphone.scss */
+  /* line 87, ../sass/_iphone.scss */
   html.touchtouch .schedule header.top .logo {
     display: block;
   }
-  /* line 84, ../sass/_iphone.scss */
+  /* line 88, ../sass/_iphone.scss */
   html.touchtouch .schedule header.top .rbk {
     margin-top: 10px;
   }
-  /* line 87, ../sass/_iphone.scss */
+  /* line 91, ../sass/_iphone.scss */
   html.touchtouch .schedule section.blackSeparator {
     font-size: 16px;
     line-height: 22px;
   }
-  /* line 91, ../sass/_iphone.scss */
+  /* line 95, ../sass/_iphone.scss */
   html.touchtouch .schedule section.blackSeparator p {
     padding: 0 40px;
   }
-  /* line 95, ../sass/_iphone.scss */
+  /* line 99, ../sass/_iphone.scss */
   html.touchtouch .schedule section.session header {
     display: block;
     margin-top: 80px;
     border-bottom: 1px solid #cccccc;
   }
-  /* line 100, ../sass/_iphone.scss */
+  /* line 104, ../sass/_iphone.scss */
   html.touchtouch .schedule section.session header .left {
     width: 100%;
     text-align: center;
   }
-  /* line 105, ../sass/_iphone.scss */
+  /* line 109, ../sass/_iphone.scss */
   html.touchtouch .schedule section.session header .right {
     width: 100%;
     text-align: left;
     padding: 0 40px;
     margin: 25px 0 30px;
   }
-  /* line 114, ../sass/_iphone.scss */
+  /* line 118, ../sass/_iphone.scss */
   html.touchtouch .schedule section.session header#intro .left, html.touchtouch .schedule section.session header#special .left {
     width: 100%;
   }
-  /* line 116, ../sass/_iphone.scss */
+  /* line 120, ../sass/_iphone.scss */
   html.touchtouch .schedule section.session header#intro .right, html.touchtouch .schedule section.session header#special .right {
     width: 100%;
     margin-top: 45px;
   }
-  /* line 120, ../sass/_iphone.scss */
+  /* line 124, ../sass/_iphone.scss */
   html.touchtouch .schedule section.session header#intro .right span, html.touchtouch .schedule section.session header#special .right span {
     padding-left: 0;
   }
-  /* line 125, ../sass/_iphone.scss */
+  /* line 129, ../sass/_iphone.scss */
   html.touchtouch .schedule section.session ul {
     width: 100%;
     margin: 0;
   }
-  /* line 129, ../sass/_iphone.scss */
+  /* line 133, ../sass/_iphone.scss */
   html.touchtouch .schedule section.session ul li {
     width: 100%;
     display: block;
     border-bottom: 1px solid #cccccc;
   }
-  /* line 134, ../sass/_iphone.scss */
+  /* line 138, ../sass/_iphone.scss */
   html.touchtouch .schedule section.session ul li:first-child {
     padding: 0;
   }
-  /* line 135, ../sass/_iphone.scss */
+  /* line 139, ../sass/_iphone.scss */
   html.touchtouch .schedule section.session ul li.noBorder {
     border-bottom: 0;
   }
-  /* line 137, ../sass/_iphone.scss */
+  /* line 141, ../sass/_iphone.scss */
   html.touchtouch .schedule section.session ul li .wrapper {
     display: block;
     width: 100%;
     padding: 40px;
   }
-  /* line 146, ../sass/_iphone.scss */
+  /* line 150, ../sass/_iphone.scss */
   html.touchtouch .schedule .time {
     width: 100%;
     font-size: 18px;
     color: #1a1a1a;
     margin-bottom: 15px;
   }
-  /* line 152, ../sass/_iphone.scss */
+  /* line 156, ../sass/_iphone.scss */
   html.touchtouch .schedule .time span {
     font-size: 10px;
     text-decoration: underline;
     vertical-align: top;
     line-height: 12px;
   }
-  /* line 160, ../sass/_iphone.scss */
+  /* line 164, ../sass/_iphone.scss */
   html.touchtouch .schedule .photo, html.touchtouch .schedule .line {
     width: 100%;
   }
-  /* line 161, ../sass/_iphone.scss */
+  /* line 165, ../sass/_iphone.scss */
   html.touchtouch .schedule .line {
     display: none;
   }
-  /* line 163, ../sass/_iphone.scss */
+  /* line 167, ../sass/_iphone.scss */
   html.touchtouch .schedule .about {
     width: 100%;
   }
-  /* line 166, ../sass/_iphone.scss */
+  /* line 170, ../sass/_iphone.scss */
   html.touchtouch .schedule .about h4 {
     margin-top: 20px;
     font-size: 18px;
     color: #1a1a1a;
   }
-  /* line 172, ../sass/_iphone.scss */
+  /* line 176, ../sass/_iphone.scss */
   html.touchtouch .schedule .about p {
     font-size: 14px;
     line-height: 21px;
     color: #1a1a1a;
   }
-  /* line 177, ../sass/_iphone.scss */
+  /* line 181, ../sass/_iphone.scss */
   html.touchtouch .schedule .about p.descriptor {
     color: #808080;
   }
-  /* line 185, ../sass/_iphone.scss */
+  /* line 189, ../sass/_iphone.scss */
   html.touchtouch .registration .logo1 {
     width: 25px;
     height: 69px;
     margin-top: 10px;
     background-image: url(../images/registration_logo_1_m.png);
   }
-  /* line 195, ../sass/_iphone.scss */
+  /* line 199, ../sass/_iphone.scss */
   html.touchtouch .address header.map {
     height: 40%;
   }
-  /* line 197, ../sass/_iphone.scss */
+  /* line 201, ../sass/_iphone.scss */
   html.touchtouch .address footer {
     width: 100%;
     height: 60%;
     padding: 40px 10px 40px 40px;
   }
-  /* line 203, ../sass/_iphone.scss */
+  /* line 207, ../sass/_iphone.scss */
   html.touchtouch .address p {
     font-size: 10px;
   }
-  /* line 207, ../sass/_iphone.scss */
+  /* line 211, ../sass/_iphone.scss */
   html.touchtouch .partners header {
     width: 100%;
   }
-  /* line 210, ../sass/_iphone.scss */
+  /* line 214, ../sass/_iphone.scss */
   html.touchtouch .partners header hr {
     width: 102px;
   }
-  /* line 216, ../sass/_iphone.scss */
+  /* line 220, ../sass/_iphone.scss */
   html.touchtouch .partners ul.orgs li:first-child {
     padding-top: 50px;
   }
-  /* line 217, ../sass/_iphone.scss */
+  /* line 221, ../sass/_iphone.scss */
   html.touchtouch .partners ul.orgs li:last-child {
     padding-bottom: 50px;
   }
-  /* line 221, ../sass/_iphone.scss */
+  /* line 225, ../sass/_iphone.scss */
   html.touchtouch .partners footer {
-    width: 960px;
+    width: calc(100% - 40px);
   }
-  /* line 224, ../sass/_iphone.scss */
+  /* line 228, ../sass/_iphone.scss */
   html.touchtouch .partners footer hr {
-    width: 960px;
+    width: calc(100% - 40px);
   }
-  /* line 226, ../sass/_iphone.scss */
+  /* line 230, ../sass/_iphone.scss */
   html.touchtouch .partners footer ul {
     -webkit-box-lines: multiple;
     -moz-box-lines: multiple;
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    width: 960px;
+    width: calc(100% - 40px);
   }
-  /* line 230, ../sass/_iphone.scss */
+  /* line 234, ../sass/_iphone.scss */
   html.touchtouch .partners footer ul li {
     min-width: 205px;
     margin: 30px auto;
   }
-  /* line 238, ../sass/_iphone.scss */
+  /* line 242, ../sass/_iphone.scss */
   html.touchtouch .credits {
     height: auto;
   }
-  /* line 241, ../sass/_iphone.scss */
+  /* line 245, ../sass/_iphone.scss */
   html.touchtouch .credits > .logoWrapper {
-    width: 960px;
+    width: calc(100% - 40px);
   }
-  /* line 243, ../sass/_iphone.scss */
+  /* line 247, ../sass/_iphone.scss */
   html.touchtouch .credits .centerizer {
     padding-top: 30px;
   }
-  /* line 246, ../sass/_iphone.scss */
+  /* line 250, ../sass/_iphone.scss */
   html.touchtouch .credits .centerizer aside {
     margin: 0 auto;
   }
-  /* line 247, ../sass/_iphone.scss */
+  /* line 251, ../sass/_iphone.scss */
   html.touchtouch .credits .centerizer .grey {
     display: block;
   }
-  /* line 248, ../sass/_iphone.scss */
+  /* line 252, ../sass/_iphone.scss */
   html.touchtouch .credits .centerizer h2 {
     margin-top: 55px;
   }
-  /* line 251, ../sass/_iphone.scss */
+  /* line 255, ../sass/_iphone.scss */
   html.touchtouch .credits footer {
     display: -webkit-box;
     display: -moz-box;
@@ -417,44 +418,44 @@ html.touchtouch .promoGif {
     padding: 60px 0;
     border-top: none;
   }
-  /* line 260, ../sass/_iphone.scss */
+  /* line 264, ../sass/_iphone.scss */
   html.touchtouch .credits footer .logo, html.touchtouch .credits footer p {
     margin-left: 40px;
   }
-  /* line 261, ../sass/_iphone.scss */
+  /* line 265, ../sass/_iphone.scss */
   html.touchtouch .credits footer .logo {
     position: static;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-  /* line 268, ../sass/_iphone.scss */
+  /* line 276, ../sass/_iphone.scss */
   html.touchtouch .welcome .logo {
     width: 205px;
     height: 91px;
     margin: 20px 0 0 40px;
     background: url(../images/welcome_logo_m.png);
   }
-  /* line 275, ../sass/_iphone.scss */
+  /* line 283, ../sass/_iphone.scss */
   html.touchtouch .welcome h2 {
     font-size: 12px;
   }
-  /* line 277, ../sass/_iphone.scss */
+  /* line 285, ../sass/_iphone.scss */
   html.touchtouch .welcome p {
     font-size: 10px;
     line-height: 16px;
   }
-  /* line 284, ../sass/_iphone.scss */
+  /* line 292, ../sass/_iphone.scss */
   html.touchtouch .registration h2 {
     padding: 0 40px;
     font-size: 10px;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
-  /* line 292, ../sass/_iphone.scss */
+  /* line 304, ../sass/_iphone.scss */
   html.touchtouch .welcome {
     height: 140%;
   }
-  /* line 295, ../sass/_iphone.scss */
+  /* line 307, ../sass/_iphone.scss */
   html.touchtouch .welcome .logo {
     width: 150px;
     height: 66px;
@@ -462,23 +463,23 @@ html.touchtouch .promoGif {
     background: url(../images/welcome_logo_m.png);
     background-size: cover;
   }
-  /* line 303, ../sass/_iphone.scss */
+  /* line 315, ../sass/_iphone.scss */
   html.touchtouch .welcome h2 {
     font-size: 14px;
   }
-  /* line 305, ../sass/_iphone.scss */
+  /* line 317, ../sass/_iphone.scss */
   html.touchtouch .welcome p {
     font-size: 8px;
     line-height: 12px;
   }
-  /* line 313, ../sass/_iphone.scss */
+  /* line 325, ../sass/_iphone.scss */
   html.touchtouch .schedule .time span {
     font-size: 6px;
     text-decoration: underline;
     vertical-align: top;
     line-height: 8px;
   }
-  /* line 323, ../sass/_iphone.scss */
+  /* line 335, ../sass/_iphone.scss */
   html.touchtouch .registration h2 {
     padding: 0 60px;
     font-size: 8px;

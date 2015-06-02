@@ -1,3 +1,4 @@
+$body: calc(100% - 40px);
 $marginLeft: 40px;
 $bodyMinWidth: 100%;
 $bodyMinHeight: 100%;
@@ -8,322 +9,334 @@ $aboutWidth: 100%;
 $headlinePadding: 30px;
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  .centerizer {
-    aside {
-      width: 100%;
-      margin-left: 0;
-      text-align: left !important;
-    }
-  }
 
-  html,
-  body,
-  .centerizer,
-  .topScreenWrapper,
-  .welcome,
-  .promo,
-  .registration,
-  .address,
-  .partners {
-    min-width: $bodyMinWidth;
-    min-height: $bodyMinHeight;
-  }
-
-  .welcome {
+  html.touchtouch {
 
     .centerizer {
-      width: $body;
-      @include align-items(flex-start);
-    }
-
-    h2, p { margin: 15px 0 0 $marginLeft; }
-
-    .social-likes_single-w,
-    .chevron {
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-
-  .promo {
-
-    .promoGif {
-      @include square(280px);
-      h2 { font-size: 16px; }
-    }
-  }
-
-  .video {
-    .centerizer {
-      iframe {
-        min-width: 300px;
-        min-height: 169px;
-      }
-    }
-  }
-
-  .schedule {
-    padding-bottom: 80px;
-
-    header.top {
-      padding: 80px 40px 0;
-
-      h2 {
-        text-align: left;
-        font-size: 20px;
-      }
-
       aside {
-        position: absolute;
-        width: 66px;
-        top: 40px;
-        right: 40px;
+        width: 100%;
+        margin-left: 0;
+        text-align: left !important;
+      }
+    }
+
+    html,
+    body,
+    .centerizer,
+    .topScreenWrapper,
+    .welcome,
+    .promo,
+    .registration,
+    .address,
+    .partners {
+      min-width: $bodyMinWidth;
+      min-height: $bodyMinHeight;
+    }
+
+    .welcome {
+
+      .centerizer {
+        width: $body;
+        @include align-items(flex-start);
       }
 
-      .logo { display: block; }
-      .rbk { margin-top: 10px; }
+      h2, p { margin: 15px 0 0 $marginLeft; }
+
+      .social-likes_single-w,
+      .chevron {
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
 
-    section.blackSeparator {
-      font-size: 16px;
-      line-height: 22px;
+    .promo {
 
-      p { padding: 0 40px; }
+      .promoGif {
+        @include square(280px);
+        h2 { font-size: 16px; }
+      }
     }
 
-    section.session {
-      header {
-        display: block;
-        margin-top: 80px;
-        border-bottom: 1px solid $grey;
-
-        .left {
-          width: 100%;
-          text-align: center;
+    .video {
+      .centerizer {
+        iframe {
+          min-width: 300px;
+          min-height: 169px;
         }
+      }
+    }
 
-        .right {
-          width: 100%;
+    .schedule {
+      padding-bottom: 80px;
+
+      header.top {
+        padding: 80px 40px 0;
+
+        h2 {
           text-align: left;
-          padding: 0 40px;
-          margin: 25px 0 30px;
+          font-size: 20px;
         }
 
-        &#intro,
-        &#special {
-          .left { width: 100%; }
+        aside {
+          position: absolute;
+          width: 66px;
+          top: 40px;
+          right: 40px;
+        }
+
+        .logo { display: block; }
+        .rbk { margin-top: 10px; }
+      }
+
+      section.blackSeparator {
+        font-size: 16px;
+        line-height: 22px;
+
+        p { padding: 0 40px; }
+      }
+
+      section.session {
+        header {
+          display: block;
+          margin-top: 80px;
+          border-bottom: 1px solid $grey;
+
+          .left {
+            width: 100%;
+            text-align: center;
+          }
 
           .right {
             width: 100%;
-            margin-top: 45px;
+            text-align: left;
+            padding: 0 40px;
+            margin: 25px 0 30px;
+          }
 
-            span { padding-left: 0; }
+          &#intro,
+          &#special {
+            .left { width: 100%; }
+
+            .right {
+              width: 100%;
+              margin-top: 45px;
+
+              span { padding-left: 0; }
+            }
           }
         }
-      }
 
-      ul {
-        width: 100%;
-        margin: 0;
-
-        li {
+        ul {
           width: 100%;
-          display: block;
-          border-bottom: 1px solid $grey;
+          margin: 0;
 
-          &:first-child { padding: 0; }
-          &.noBorder { border-bottom: 0; }
-
-          .wrapper {
-            display: block;
+          li {
             width: 100%;
-            padding: 40px;
+            display: block;
+            border-bottom: 1px solid $grey;
+
+            &:first-child { padding: 0; }
+            &.noBorder { border-bottom: 0; }
+
+            .wrapper {
+              display: block;
+              width: 100%;
+              padding: 40px;
+            }
           }
         }
       }
-    }
 
-    .time {
-      width: 100%;
-      font-size: 18px;
-      color: $scheduleGrey;
-      margin-bottom: 15px;
-
-      span {
-        font-size: 10px;
-        text-decoration: underline;
-        vertical-align: top;
-        line-height: 12px;
-      }
-    }
-
-    .photo, .line { width: 100%; }
-    .line { display: none; }
-
-    .about {
-      width: 100%;
-
-      h4 {
-        margin-top: 20px;
+      .time {
+        width: 100%;
         font-size: 18px;
         color: $scheduleGrey;
+        margin-bottom: 15px;
+
+        span {
+          font-size: 10px;
+          text-decoration: underline;
+          vertical-align: top;
+          line-height: 12px;
+        }
       }
 
-      p {
-        font-size: 14px;
-        line-height: 21px;
-        color: $scheduleGrey;
+      .photo, .line { width: 100%; }
+      .line { display: none; }
 
-        &.descriptor {
-          color: $scheduleLightGrey;
+      .about {
+        width: 100%;
+
+        h4 {
+          margin-top: 20px;
+          font-size: 18px;
+          color: $scheduleGrey;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 21px;
+          color: $scheduleGrey;
+
+          &.descriptor {
+            color: $scheduleLightGrey;
+          }
         }
       }
     }
-  }
 
-  .registration {
-    .logo1 {
-      width: 25px;
-      height: 69px;
-      margin-top: 10px;
-      background-image: url(../images/registration_logo_1_m.png);
-    }
-  }
-
-  .address {
-
-    header.map { height: 40%; }
-
-    footer {
-      width: 100%;
-      height: 60%;
-      padding: 40px 10px 40px 40px;
-    }
-
-    p { font-size: 10px; }
-  }
-
-  .partners {
-    header {
-      width: 100%;
-
-      hr { width: 102px; }
-    }
-
-    ul.orgs {
-      li {
-        $padding: 50px;
-        &:first-child { padding-top: $padding; }
-        &:last-child  { padding-bottom: $padding; }
+    .registration {
+      .logo1 {
+        width: 25px;
+        height: 69px;
+        margin-top: 10px;
+        background-image: url(../images/registration_logo_1_m.png);
       }
     }
 
-    footer {
-      width: $body;
+    .address {
 
-      hr { width: $body; }
+      header.map { height: 40%; }
 
-      ul {
-        @include flex-wrap(wrap);
+      footer {
+        width: 100%;
+        height: 60%;
+        padding: 40px 10px 40px 40px;
+      }
+
+      p { font-size: 10px; }
+    }
+
+    .partners {
+      header {
+        width: 100%;
+
+        hr { width: 102px; }
+      }
+
+      ul.orgs {
+        li {
+          $padding: 50px;
+          &:first-child { padding-top: $padding; }
+          &:last-child  { padding-bottom: $padding; }
+        }
+      }
+
+      footer {
         width: $body;
 
-        li {
-          min-width: 205px;
-          margin: 30px auto;
+        hr { width: $body; }
+
+        ul {
+          @include flex-wrap(wrap);
+          width: $body;
+
+          li {
+            min-width: 205px;
+            margin: 30px auto;
+          }
         }
       }
     }
-  }
 
-  .credits {
-    height: auto;
+    .credits {
+      height: auto;
 
-    & > .logoWrapper { width: $body; }
+      & > .logoWrapper { width: $body; }
 
-    .centerizer {
-      padding-top: 30px;
+      .centerizer {
+        padding-top: 30px;
 
-      aside { margin: 0 auto; }
-      .grey { display: block; }
-      h2 { margin-top: 55px; }
-    }
+        aside { margin: 0 auto; }
+        .grey { display: block; }
+        h2 { margin-top: 55px; }
+      }
 
-    footer {
-      @include display-flex();
-      @include flex-direction(column);
-      @include justify-content(space-around);
-      width: 100%;
-      height: 306px;
-      padding: 60px 0;
-      border-top: none;
+      footer {
+        @include display-flex();
+        @include flex-direction(column);
+        @include justify-content(space-around);
+        width: 100%;
+        height: 306px;
+        padding: 60px 0;
+        border-top: none;
 
-      .logo, p { margin-left: $marginLeft; }
-      .logo { position: static; }
+        .logo, p { margin-left: $marginLeft; }
+        .logo { position: static; }
+      }
     }
   }
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
-  .welcome {
-    .logo {
-      width: 205px;
-      height: 91px;
-      margin: 20px 0 0 $marginLeft;
-      background: url(../images/welcome_logo_m.png);
+
+  html.touchtouch {
+
+    .welcome {
+      .logo {
+        width: 205px;
+        height: 91px;
+        margin: 20px 0 0 $marginLeft;
+        background: url(../images/welcome_logo_m.png);
+      }
+
+      h2 { font-size: 12px; }
+
+      p {
+        font-size: 10px;
+        line-height: 16px;
+      }
     }
 
-    h2 { font-size: 12px; }
-
-    p {
-      font-size: 10px;
-      line-height: 16px;
-    }
-  }
-
-  .registration {
-    h2 {
-      padding: 0 40px;
-      font-size: 10px;
+    .registration {
+      h2 {
+        padding: 0 40px;
+        font-size: 10px;
+      }
     }
   }
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) {
-  .welcome {
-    height: 140%;
 
-    .logo {
-      width: 150px;
-      height: 66px;
-      margin: 20px 0 0 $marginLeft;
-      background: url(../images/welcome_logo_m.png);
-      background-size: cover;
-    }
+  html.touchtouch {
 
-    h2 { font-size: 14px; }
+    .welcome {
+      height: 140%;
 
-    p {
-      font-size: 8px;
-      line-height: 12px;
-    }
-  }
+      .logo {
+        width: 150px;
+        height: 66px;
+        margin: 20px 0 0 $marginLeft;
+        background: url(../images/welcome_logo_m.png);
+        background-size: cover;
+      }
 
-  .schedule {
-    .time {
-      span {
-        font-size: 6px;
-        text-decoration: underline;
-        vertical-align: top;
-        line-height: 8px;
+      h2 { font-size: 14px; }
+
+      p {
+        font-size: 8px;
+        line-height: 12px;
       }
     }
-  }
 
-  .registration {
-    h2 {
-      padding: 0 60px;
-      font-size: 8px;
-      line-height: 14px;
+    .schedule {
+      .time {
+        span {
+          font-size: 6px;
+          text-decoration: underline;
+          vertical-align: top;
+          line-height: 8px;
+        }
+      }
+    }
+
+    .registration {
+      h2 {
+        padding: 0 60px;
+        font-size: 8px;
+        line-height: 14px;
+      }
     }
   }
 }

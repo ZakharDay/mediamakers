@@ -3,102 +3,106 @@
   $bodyMinHeight: 100%;
   $bodyMinWidth: 100%;
 
-  html,
-  body,
-  .centerizer,
-  .topScreenWrapper,
-  .welcome,
-  .promo,
-  .registration,
-  .address {
-    min-width: $bodyMinWidth;
-    min-height: $bodyMinHeight;
-  }
-
-  .welcome {
-    .centerizer {
-      width: $body;
+  html.touchtouch {
+    html,
+    body,
+    .centerizer,
+    .topScreenWrapper,
+    .welcome,
+    .promo,
+    .registration,
+    .address {
+      min-width: $bodyMinWidth;
+      min-height: $bodyMinHeight;
     }
-  }
 
-  .video {
-    .centerizer {
-      iframe {
-        min-width: 700px;
-        min-height: 395px;
+    .welcome {
+      .centerizer {
+        width: $body;
       }
     }
-  }
 
-  .schedule {
-    section.session {
-      ul {
-        li {
-          .wrapper { width: $body; }
+    .video {
+      .centerizer {
+        iframe {
+          min-width: 700px;
+          min-height: 395px;
         }
       }
     }
-  }
 
-  .partners {
-    header,
-    footer,
-    footer hr { width: $body; }
-  }
+    .schedule {
+      section.session {
+        ul {
+          li {
+            .wrapper { width: $body; }
+          }
+        }
+      }
+    }
 
-  .credits {
-    height: auto;
+    .partners {
+      header,
+      footer,
+      footer hr { width: $body; }
+    }
 
-    & > .logoWrapper,
-    footer { width: $body; }
+    .credits {
+      height: auto;
 
-    .centerizer { display: block; }
+      & > .logoWrapper,
+      footer { width: $body; }
+
+      .centerizer { display: block; }
+    }
   }
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
   $aboutWidth: 486px;
 
-  .schedule {
+  html.touchtouch {
+    .schedule {
 
-    header.top {
-      h2 {
-        padding-left: 20px;
-        text-align: left;
+      header.top {
+        h2 {
+          padding-left: 20px;
+          text-align: left;
+        }
       }
-    }
 
-    .about { width: $aboutWidth; }
+      .about { width: $aboutWidth; }
 
-    section.session {
-      header {
-        .left { width: $timeWidth + $photoWidth - $headlinePadding; }
-        .right { width: $aboutWidth - $headlinePadding; }
-
-        &#intro,
-        &#special {
-
+      section.session {
+        header {
           .left { width: $timeWidth + $photoWidth - $headlinePadding; }
+          .right { width: $aboutWidth - $headlinePadding; }
 
-          .right {
-            width: $aboutWidth + $headlinePadding;
+          &#intro,
+          &#special {
 
-            span {
-              padding-left: $headlinePadding;
+            .left { width: $timeWidth + $photoWidth - $headlinePadding; }
+
+            .right {
+              width: $aboutWidth + $headlinePadding;
+
+              span {
+                padding-left: $headlinePadding;
+              }
             }
           }
         }
       }
     }
-  }
 
-  .partners {
-    footer {
-      ul {
-        width: $body;
+    .partners {
+      footer {
+        ul {
+          width: $body;
 
-        li {
-          min-width: 205px;
+          li {
+            min-width: 205px;
+          }
         }
       }
     }
@@ -108,24 +112,27 @@
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
   $aboutWidth: 686px;
 
-  .schedule {
+  html.touchtouch {
 
-    .about { width: $aboutWidth; }
+    .schedule {
 
-    section.session {
-      header {
-        .left { width: $timeWidth + $photoWidth - $headlinePadding * 2; }
-        .right { width: $aboutWidth - $headlinePadding; }
+      .about { width: $aboutWidth; }
 
-        &#intro,
-        &#special {
-
+      section.session {
+        header {
           .left { width: $timeWidth + $photoWidth - $headlinePadding * 2; }
+          .right { width: $aboutWidth - $headlinePadding; }
 
-          .right {
-            width: $aboutWidth + $headlinePadding;
+          &#intro,
+          &#special {
 
-            span { padding-left: $headlinePadding; }
+            .left { width: $timeWidth + $photoWidth - $headlinePadding * 2; }
+
+            .right {
+              width: $aboutWidth + $headlinePadding;
+
+              span { padding-left: $headlinePadding; }
+            }
           }
         }
       }

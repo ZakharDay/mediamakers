@@ -6,6 +6,7 @@
 
 html.touchtouch {
   @import 'mobile_basics';
-  @import 'ipad';
-  @import 'iphone';
 }
+
+@import 'ipad';
+@import 'iphone';
